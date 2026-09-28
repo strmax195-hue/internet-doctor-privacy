@@ -25,7 +25,7 @@ ul { padding-left:1.2em; }
 <nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности приложения «Интернет Доктор»</h1>
-<p>Дата вступления в силу: 25 сентября 2026 года.</p>
+<p>Дата вступления в силу: 28 сентября 2026 года (версия приложения 1.1.0).</p>
 <p>Коротко: приложение не собирает о вас никаких данных. Всё, что оно измеряет и запоминает, остаётся на вашем телефоне.</p>
 <h2>Кто отвечает за приложение</h2>
 <p>Приложение «Интернет Доктор» разработано и распространяется частным разработчиком. По всем вопросам о конфиденциальности пишите на <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
@@ -34,7 +34,7 @@ ul { padding-left:1.2em; }
 <li>Не требует регистрации и не создаёт аккаунтов.</li>
 <li>Не содержит аналитических SDK, рекламных и прочих трекеров.</li>
 <li>Не передаёт разработчику и третьим лицам результаты проверок, историю или сведения об устройстве.</li>
-<li>Не определяет ваше местоположение и не запрашивает номер телефона, контакты, фото и файлы.</li>
+<li>Не определяет ваше местоположение и не запрашивает номер телефона, контакты и фото. К файлам обращается, только когда вы сами выбираете файл: чтобы сохранить или восстановить копию данных или сохранить таблицу истории.</li>
 <li>Не показывает рекламу.</li>
 </ul>
 <h2>Какие данные хранятся на телефоне</h2>
@@ -44,19 +44,27 @@ ul { padding-left:1.2em; }
 <li>Места, сохранённые в Wi-Fi радаре, и подписи устройств домашней сети — только те названия, которые вы задали сами.</li>
 <li>Настройки приложения, в том числе выбранный язык.</li>
 </ul>
+<ul>
+<li>Цифры последней проверки (без имени сети) — чтобы результат открылся, если система выгрузит приложение из памяти.</li>
+<li>Объём трафика, израсходованного приложением за месяц, — чтобы показать его в «Приватности».</li>
+</ul>
 <p>Эти данные хранятся только в памяти приложения на вашем телефоне. Они исключены из облачных резервных копий и переноса на другое устройство. Удалить их можно в приложении («Приватность → Удалить все данные») или удалив приложение.</p>
+<h2>Копия данных, таблица и картинки</h2>
+<p>В разделе «Приватность → Ваши данные» можно сохранить копию истории, карт и подписей в файл, восстановить данные из такого файла и выгрузить историю в таблицу CSV. Файл сохраняется туда, куда вы сами укажете (на телефон или в облачное хранилище, которое вы выбрали в системном окне). Приложение не отправляет эти файлы разработчику.</p>
+<p>Картинку с результатом и PDF-отчёт приложение делает на телефоне и передаёт только в то приложение, которое вы выберете, нажав «Поделиться» или «Отправить PDF».</p>
 <h2>Какие сетевые запросы выполняются</h2>
 <p>Чтобы измерить интернет, приложение обращается к общедоступным серверам:</p>
 <ul>
-<li>скачивает тестовые данные для замера скорости загрузки (зеркала Яндекса и Selectel, при их недоступности — Hetzner, OVH, Cloudflare);</li>
-<li>отправляет случайные тестовые данные для замера скорости отдачи (сервер замера скорости Cloudflare); эти данные сразу отбрасываются;</li>
-<li>устанавливает короткие соединения с несколькими узлами (DNS-серверы Яндекса, Google, Cloudflare) для оценки задержки;</li>
-<li>проверяет, открываются ли сайты ya.ru, vk.com, mail.ru, rustore.ru, и отправляет DNS-запросы для этих адресов.</li>
+<li>скачивает тестовые данные для замера скорости загрузки с ближайшего из серверов Cloudflare, Hetzner, OVH, Yandex и Selectel (сервер выбирается автоматически по короткому пробному замеру; перед этим приложение узнаёт у Cloudflare код ближайшего узла, чтобы показать, до какого города мерили);</li>
+<li>отправляет случайные тестовые данные для замера скорости отдачи на ближайший сервер; эти данные сразу отбрасываются;</li>
+<li>устанавливает короткие соединения с публичными DNS-серверами (Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9, OpenDNS, AdGuard) для оценки задержки;</li>
+<li>проверяет, открываются ли google.com, cloudflare.com, wikipedia.org и apple.com, и отправляет DNS-запросы для этих адресов;</li>
+<li>на экране «Для специалистов», если вы нажмёте кнопку проверки, — отправляет системные ping-запросы к 1.1.1.1 и узлам по пути к нему (маршрут и MTU) и соединяется с 2606:4700:4700::1111 (проверка IPv6).</li>
 </ul>
 <p>Это обычные запросы, как у браузера: в них нет вашего имени, номера телефона или идентификаторов устройства. Как и любой сайт, эти серверы видят IP-адрес, с которого пришёл запрос, и обрабатывают его по своим правилам. Приложение не передаёт им никаких других сведений.</p>
 <p>Поиск устройств в сети и проверка роутера работают только внутри вашей домашней сети.</p>
 <h2>Автопроверка</h2>
-<p>Если вы включите автопроверку, приложение раз в 3 часа выполняет короткую проверку по Wi-Fi и сохраняет результат в историю на телефоне. По умолчанию автопроверка выключена.</p>
+<p>Если вы включите автопроверку, приложение с выбранной вами частотой (раз в 1, 3, 6 или 12 часов) выполняет короткую проверку по Wi-Fi и сохраняет результат в историю на телефоне. В экономном режиме скорость не замеряется. По желанию раз в день приходит уведомление со сводкой. По умолчанию автопроверка выключена.</p>
 <h2>Разрешения</h2>
 <ul>
 <li>Интернет и состояние сети — для замеров и определения типа подключения.</li>
@@ -64,9 +72,13 @@ ul { padding-left:1.2em; }
 <li>Датчики движения (без отдельного разрешения) — для карты сигнала: по шагам и повороту телефона приложение рисует путь по квартире. Данные датчиков не сохраняются и никуда не передаются.</li>
 <li>Вибрация — для отклика Wi-Fi радара.</li>
 <li>Запуск после перезагрузки — чтобы автопроверка продолжала работать, если вы её включили.</li>
+<li>Уведомления (Android 13+) — только для наблюдения за связью и дневной сводки, если вы их включили.</li>
+<li>Фоновая служба и запрет сна — чтобы наблюдение за связью, которое вы запустили, не прерывалось при выключенном экране. Пока оно идёт, видно уведомление с кнопкой «Остановить».</li>
 </ul>
+<h2>Виджет и плитка</h2>
+<p>Виджет на рабочем столе и плитка в быстрых настройках показывают итог последней проверки из истории на телефоне и ничего не отправляют.</p>
 <h2>Отчёт для техподдержки</h2>
-<p>Отчёт формируется на телефоне и отправляется, только если вы сами нажмёте «Отправить» и выберете, куда. В отчёте есть только результаты проверки: время, скорость, задержка, потери, состояние DNS.</p>
+<p>Отчёт (текст или PDF) формируется на телефоне и отправляется, только если вы сами нажмёте «Отправить» и выберете, куда. В отчёте есть только результаты проверки: время, скорость, задержка, потери, состояние DNS.</p>
 <h2>Дети</h2>
 <p>Приложение не собирает персональные данные, в том числе данные детей.</p>
 <h2>Изменения политики</h2>
@@ -76,7 +88,7 @@ ul { padding-left:1.2em; }
 </section>
 <section id="en" lang="en">
 <h1>Privacy policy of the Internet Doctor app</h1>
-<p>Effective date: 25 September 2026.</p>
+<p>Effective date: 28 September 2026 (app version 1.1.0).</p>
 <p>In short: the app does not collect any data about you. Everything it measures and remembers stays on your phone.</p>
 <h2>Who is responsible for the app</h2>
 <p>The Internet Doctor app is developed and distributed by a private developer. For any privacy questions, write to <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
@@ -85,7 +97,7 @@ ul { padding-left:1.2em; }
 <li>It does not require sign-up and does not create accounts.</li>
 <li>It contains no analytics SDKs, ad trackers or other trackers.</li>
 <li>It does not send check results, history or device information to the developer or third parties.</li>
-<li>It does not determine your location and does not ask for your phone number, contacts, photos or files.</li>
+<li>It does not determine your location and does not ask for your phone number, contacts or photos. It accesses files only when you pick a file yourself: to save or restore a backup or to save the history spreadsheet.</li>
 <li>It does not show ads.</li>
 </ul>
 <h2>What data is stored on the phone</h2>
@@ -95,31 +107,43 @@ ul { padding-left:1.2em; }
 <li>Places saved in the Wi-Fi radar and home network device labels: only the names you entered yourself.</li>
 <li>App settings, including the chosen language.</li>
 </ul>
-<p>This data is stored only in the app&#x27;s storage on your phone. It is excluded from cloud backups and device transfer. You can delete it in the app (&quot;Privacy → Delete all data&quot;) or by uninstalling the app.</p>
+<ul>
+<li>The numbers of the latest check (without the network name), so the result opens again if the system unloads the app.</li>
+<li>The amount of data the app used this month, to show it under "Privacy".</li>
+</ul>
+<p>This data is stored only in the app's storage on your phone. It is excluded from cloud backups and device transfer. You can delete it in the app ("Privacy → Delete all data") or by uninstalling the app.</p>
+<h2>Backup, spreadsheet and images</h2>
+<p>Under "Privacy → Your data" you can save a backup of the history, maps and labels to a file, restore data from such a file and export the history to a CSV spreadsheet. The file is saved where you choose (on the phone or in the cloud storage you pick in the system dialog). The app does not send these files to the developer.</p>
+<p>The result image and the PDF report are made on the phone and passed only to the app you choose after tapping "Share" or "Send PDF".</p>
 <h2>What network requests are made</h2>
 <p>To measure the internet, the app contacts public servers:</p>
 <ul>
-<li>it downloads test data to measure download speed (Yandex and Selectel mirrors; if unavailable, Hetzner, OVH, Cloudflare);</li>
-<li>it sends random test data to measure upload speed (Cloudflare speed test server); this data is discarded immediately;</li>
-<li>it opens short connections to several servers (DNS servers of Yandex, Google, Cloudflare) to estimate latency;</li>
-<li>it checks whether ya.ru, vk.com, mail.ru and rustore.ru open, and sends DNS queries for these addresses.</li>
+<li>it downloads test data to measure download speed from the nearest of the Cloudflare, Hetzner, OVH, Yandex and Selectel servers (chosen automatically by a short trial measurement; before that, the app asks Cloudflare for the code of its nearest location to show which city was measured);</li>
+<li>it sends random test data to the nearest server to measure upload speed; this data is discarded immediately;</li>
+<li>it opens short connections to public DNS servers (Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9, OpenDNS, AdGuard) to estimate latency;</li>
+<li>it checks whether google.com, cloudflare.com, wikipedia.org and apple.com open, and sends DNS queries for these addresses;</li>
+<li>on the "For experts" screen, if you tap the check button, it sends system ping requests to 1.1.1.1 and the hops on the way to it (route and MTU) and connects to 2606:4700:4700::1111 (IPv6 check).</li>
 </ul>
 <p>These are ordinary requests, like a browser makes: they contain no name, phone number or device identifiers. Like any website, these servers see the IP address the request came from and process it under their own rules. The app sends them nothing else.</p>
 <p>Device search and the router check work only inside your home network.</p>
 <h2>Auto-check</h2>
-<p>If you turn on auto-check, the app runs a short check over Wi-Fi every 3 hours and saves the result to the history on the phone. Auto-check is off by default.</p>
+<p>If you turn on auto-check, the app runs a short check over Wi-Fi as often as you choose (every 1, 3, 6 or 12 hours) and saves the result to the history on the phone. In the light mode, speed is not measured. Optionally, a daily summary notification is shown. Auto-check is off by default.</p>
 <h2>Permissions</h2>
 <ul>
 <li>Internet and network state: for measurements and detecting the connection type.</li>
-<li>Location (or &quot;Nearby Wi-Fi devices&quot; on Android 13+): only for checking Wi-Fi channels and your network name, because Android provides the list of nearby networks only with this permission. The app does not determine your location. Everything else works without it.</li>
+<li>Location (or "Nearby Wi-Fi devices" on Android 13+): only for checking Wi-Fi channels and your network name, because Android provides the list of nearby networks only with this permission. The app does not determine your location. Everything else works without it.</li>
 <li>Motion sensors (no separate permission): for the signal map, the app draws your path through the home from steps and phone orientation. Sensor data is not saved or sent anywhere.</li>
 <li>Vibration: for Wi-Fi radar feedback.</li>
 <li>Start after reboot: so that auto-check keeps working if you turned it on.</li>
+<li>Notifications (Android 13+): only for the connection watch and the daily summary, if you turned them on.</li>
+<li>Foreground service and keeping the device awake: so that a connection watch you started is not interrupted while the screen is off. While it runs, a notification with a "Stop" button is shown.</li>
 </ul>
+<h2>Widget and tile</h2>
+<p>The home-screen widget and the quick-settings tile show the latest result from the history on the phone and send nothing.</p>
 <h2>Report for support</h2>
-<p>The report is created on the phone and is sent only if you tap &quot;Send&quot; and choose where yourself. It contains only check results: time, speed, latency, loss and DNS status.</p>
+<p>The report (text or PDF) is created on the phone and is sent only if you tap "Send" and choose where yourself. It contains only check results: time, speed, latency, loss and DNS status.</p>
 <h2>Children</h2>
-<p>The app does not collect personal data, including children&#x27;s data.</p>
+<p>The app does not collect personal data, including children's data.</p>
 <h2>Changes to this policy</h2>
 <p>If the policy changes, the new version will appear in the app and at this link with a new effective date.</p>
 <h2>Contact</h2>
