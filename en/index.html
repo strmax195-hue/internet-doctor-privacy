@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Internet Doctor — finds out why your internet is slow</title>
+<meta name="description" content="An Android app: tap one button and in 20 seconds you know what&#x27;s wrong — your Wi‑Fi, the router or the provider — and what to do about it. No sign-up, ads or trackers.">
+<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1020" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
+<link rel="alternate" hreflang="ru" href="https://strmax195-hue.github.io/internet-doctor-privacy/">
+<link rel="alternate" hreflang="en" href="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
+<link rel="alternate" hreflang="x-default" href="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Internet Doctor — finds out why your internet is slow">
+<meta property="og:description" content="An Android app: tap one button and in 20 seconds you know what&#x27;s wrong — your Wi‑Fi, the router or the provider — and what to do about it. No sign-up, ads or trackers.">
+<meta property="og:url" content="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
+<meta property="og:image" content="https://strmax195-hue.github.io/internet-doctor-privacy/assets/img/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css?v=1.3">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Internet Doctor", "operatingSystem": "Android 8.0+", "applicationCategory": "UtilitiesApplication", "description": "An Android app: tap one button and in 20 seconds you know what's wrong — your Wi‑Fi, the router or the provider — and what to do about it. No sign-up, ads or trackers.", "softwareVersion": "1.3.0", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://strmax195-hue.github.io/internet-doctor-privacy/en/", "image": "https://strmax195-hue.github.io/internet-doctor-privacy/assets/img/og-en.jpg", "inLanguage": "en"}</script>
+</head>
+<body data-lang="en" data-other="../" data-suggest="Этот сайт есть на русском" data-suggest-btn="Открыть">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 15.9a5 5 0 0 1 6.6 0"/><circle cx="12" cy="19.3" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-router" viewBox="0 0 24 24"><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 16.5h.01M10.5 16.5h.01"/><path d="M8 9.5a5.5 5.5 0 0 1 8 0"/><path d="M5.5 7a9 9 0 0 1 13 0"/><path d="M12 13v-2"/></symbol>
+  <symbol id="i-dns" viewBox="0 0 24 24"><path d="M5 4.5h11a3 3 0 0 1 3 3v12H8a3 3 0 0 1-3-3z"/><path d="M5 16.5a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></symbol>
+  <symbol id="i-isp" viewBox="0 0 24 24"><path d="M12 10v11"/><path d="M8.5 21h7"/><path d="M12 10l-3.5 11M12 10l3.5 11"/><path d="M8.2 6.2a5.3 5.3 0 0 0 0 7.6M15.8 6.2a5.3 5.3 0 0 1 0 7.6"/><path d="M5.3 3.4a9.4 9.4 0 0 0 0 13.2M18.7 3.4a9.4 9.4 0 0 1 0 13.2"/><circle cx="12" cy="10" r="1.3" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 6v7.5"/><circle cx="12" cy="17.8" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M7.5 12h9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/></symbol>
+  <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4l4.4-4.6"/></symbol>
+  <symbol id="i-proof" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/><path d="M8 10.6l1.8 1.8l3.2-3.4"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.7"/><circle cx="12" cy="17.2" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6.4-6.4"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-channels" viewBox="0 0 24 24"><path d="M3 19c2-9 4-9 6 0"/><path d="M8 19c2.5-12 5.5-12 8 0"/><path d="M15 19c2-8 4-8 6 0"/><path d="M2.5 19.5h19"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6l5 12l2.5-6h4"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="5" width="13" height="9.5" rx="1.5"/><path d="M6 18h6"/><rect x="17" y="8" width="4.5" height="10" rx="1.2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 0 5.6 7.2"/><path d="M5 3.5v4h4"/><path d="M4 12.5a8 8 0 0 0 14.4 4.3"/><path d="M19 20.5v-4h-4"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-3.5-3.5"/><path d="M20 16H6l3.5 3.5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+  <symbol id="i-widget" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M6.5 9.5l3 2.5l-3 2.5M12 15h5"/></symbol>
+  <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5.5h9M8.5 3.5v2M6 5.5c.7 3.4 3 6 6 7.5M11 5.5c-.8 4-3.3 7-7 8.5"/><path d="M12.5 20.5l4-10l4 10M14 17h5"/></symbol>
+  <symbol id="i-user-off" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.8"/><path d="M4.5 20.5a7.5 7.5 0 0 1 11.6-6.3"/><path d="M17 16l4 4M21 16l-4 4"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.6A9.7 9.7 0 0 1 12 5.5c5.5 0 9 6.5 9 6.5a17 17 0 0 1-2.6 3.4M6.3 7.3C4.2 8.8 3 12 3 12s3.5 6.5 9 6.5a8.6 8.6 0 0 0 4.2-1.1"/><path d="M9.9 10a3 3 0 0 0 4.1 4.1"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M9.5 12l1.8 1.8L14.7 10"/></symbol>
+  <symbol id="i-cloud-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M8.5 6.6A6 6 0 0 1 17.6 10a4 4 0 0 1 3 5.6M17 18.5H7a4.5 4.5 0 0 1-1.4-8.8"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6.5 6.5l.9 13.5h9.2l.9-13.5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v12M7 11l5 5l5-5"/><path d="M4.5 20.5h15"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6l-6 6"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4.5v4h-4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="brand" href="./" aria-label="Internet Doctor">
+      <img src="../assets/img/icon.svg" width="34" height="34" alt="">
+      <span>Internet Doctor</span>
+    </a>
+    <nav class="nav" aria-label="Menu">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#safety">Safety</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="top-act">
+      <a class="lang" href="../" hreflang="ru" lang="ru" title="Русский" data-lang="ru"><svg><use href="#i-globe"/></svg>RU</a>
+      <a class="btn btn-sm" href="#get">Get the app</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <a class="pill pill-new reveal" href="#safety"><svg><use href="#i-spark"/></svg>New in 1.3 — “Is this network safe?”<svg class="chev"><use href="#i-chevron"/></svg></a>
+      <h1 class="reveal">Finds out why your <span class="grad">internet is slow</span></h1>
+      <p class="lead reveal">One button, and in 20 seconds you get a plain answer: is it your Wi‑Fi, the router or the provider? Plus what to do about it, step by step.</p>
+      <div class="stores reveal" id="get">
+        <a class="store" href="https://play.google.com/store/apps/details?id=builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-gp" aria-hidden="true"><svg><use href="#i-download"/></svg></span><span><small>Get it on</small>Google Play</span></a><a class="store" href="https://www.rustore.ru/catalog/app/builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-ru" aria-hidden="true">R</span><span><small>Download on</small>RuStore</span></a>
+      </div>
+      <p class="note reveal">Free · Android 8 and newer · under 2 MB</p>
+      <ul class="chips reveal">
+        <li><svg><use href="#i-user-off"/></svg>No sign-up</li>
+        <li><svg><use href="#i-eye-off"/></svg>No ads</li>
+        <li><svg><use href="#i-device"/></svg>All on your phone</li>
+      </ul>
+    </div>
+    <div class="hero-art reveal">
+      <div class="phone phone-hero">
+        <img src="../assets/img/result-en.webp" width="760" height="1340" alt="Result screen: “Wi‑Fi is weak, the problem is inside your home network”, with speed, latency and stability below" fetchpriority="high">
+      </div>
+      <div class="float float-1"><span class="dot ok"></span><div><b>Latency 63 ms</b><small>good</small></div></div>
+      <div class="float float-2"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><b>Provider is fine</b><small>the problem is at home</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head center">
+      <p class="kicker">How it thinks</p>
+      <h2>Checks the whole chain and finds the weak link</h2>
+      <p class="lead">Phone, Wi‑Fi, router, DNS, provider, internet. The app goes through them one by one and shows exactly where it breaks. Pick a situation:</p>
+    </div>
+    <div class="demo" id="demo" data-todo="What to do" data-enough="Is it fast enough" data-demo="{&quot;wifi&quot;: {&quot;nodes&quot;: &quot;ok warn ok ok ok ok&quot;, &quot;tone&quot;: &quot;warn&quot;, &quot;eyebrow&quot;: &quot;Something to note&quot;, &quot;title&quot;: &quot;Wi‑Fi is weak&quot;, &quot;text&quot;: &quot;The internet from the provider works fine. The speed drops because of the signal quality between the phone and the router.&quot;, &quot;where&quot;: &quot;The problem is inside your home network&quot;, &quot;steps&quot;: [&quot;Move closer to the router&quot;, &quot;Put the router higher and closer to the middle of your home — not on the floor, in a cabinet or behind the TV&quot;, &quot;Find weak spots on the Signal map&quot;]}, &quot;isp&quot;: {&quot;nodes&quot;: &quot;ok ok ok na bad na&quot;, &quot;tone&quot;: &quot;bad&quot;, &quot;eyebrow&quot;: &quot;Problem found&quot;, &quot;title&quot;: &quot;Looks like a provider problem&quot;, &quot;text&quot;: &quot;The Wi‑Fi connection to the router is stable, but there&#x27;s no access to the outside internet. So the break is somewhere between the router and the provider.&quot;, &quot;where&quot;: &quot;The problem isn&#x27;t the phone or the Wi‑Fi&quot;, &quot;steps&quot;: [&quot;Restart the router: sometimes it loses the connection to the provider&quot;, &quot;Check your balance in the provider&#x27;s account&quot;, &quot;Call your provider and send the report from the app: it has all the data they need&quot;]}, &quot;dns&quot;: {&quot;nodes&quot;: &quot;ok ok ok bad ok ok&quot;, &quot;tone&quot;: &quot;bad&quot;, &quot;eyebrow&quot;: &quot;Problem found&quot;, &quot;title&quot;: &quot;Looks like a DNS problem&quot;, &quot;text&quot;: &quot;The internet works, but the phone can&#x27;t look up website addresses, so websites don&#x27;t open.&quot;, &quot;where&quot;: &quot;The problem isn&#x27;t the phone or the Wi‑Fi&quot;, &quot;steps&quot;: [&quot;Restart the router&quot;, &quot;Turn on Private DNS in your phone settings and enter a reliable DNS server&quot;, &quot;If that doesn&#x27;t help, tell your provider that DNS isn&#x27;t working&quot;]}, &quot;ok&quot;: {&quot;nodes&quot;: &quot;ok ok ok ok ok ok&quot;, &quot;tone&quot;: &quot;ok&quot;, &quot;eyebrow&quot;: &quot;All good&quot;, &quot;title&quot;: &quot;The internet works great&quot;, &quot;text&quot;: &quot;Download 87 Mbps, latency 25 ms, no loss.&quot;, &quot;where&quot;: &quot;&quot;, &quot;enough&quot;: [&quot;Video calls — excellent&quot;, &quot;Online games — great&quot;, &quot;4K video — fits&quot;]}}">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-sc="wifi">Weak Wi‑Fi</button>
+        <button role="tab" aria-selected="false" data-sc="isp">Provider outage</button>
+        <button role="tab" aria-selected="false" data-sc="dns">Sites won't open</button>
+        <button role="tab" aria-selected="false" data-sc="ok">All good</button>
+      </div>
+      <div class="demo-card">
+        <ol class="chain" aria-hidden="true">
+          <li data-n="0"><span class="node"><svg><use href="#i-phone"/></svg><em class="badge"></em></span><span class="lbl">Phone</span></li>
+          <li data-n="1"><span class="node"><svg><use href="#i-wifi"/></svg><em class="badge"></em></span><span class="lbl">Wi‑Fi</span></li>
+          <li data-n="2"><span class="node"><svg><use href="#i-router"/></svg><em class="badge"></em></span><span class="lbl">Router</span></li>
+          <li data-n="3"><span class="node"><svg><use href="#i-dns"/></svg><em class="badge"></em></span><span class="lbl">DNS</span></li>
+          <li data-n="4"><span class="node"><svg><use href="#i-isp"/></svg><em class="badge"></em></span><span class="lbl">Provider</span></li>
+          <li data-n="5"><span class="node"><svg><use href="#i-globe"/></svg><em class="badge"></em></span><span class="lbl">Internet</span></li>
+        </ol>
+        <div class="verdict" aria-live="polite">
+          <div class="v-wait"><span class="spin"></span>Checking…</div>
+          <div class="v-body" hidden>
+            <div class="v-main">
+              <div class="v-top"><span class="v-ico"></span><span class="v-eyebrow"></span></div>
+              <h3 class="v-title"></h3>
+              <p class="v-text"></p>
+              <p class="v-where"><svg><use href="#i-pin"/></svg><span></span></p>
+            </div>
+            <div class="v-side">
+              <p class="v-side-h"></p>
+              <ol class="v-steps"></ol>
+              <button class="replay" type="button"><svg><use href="#i-play"/></svg>Check again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="fine center">It isn't fooled by one lucky result: latency is measured before and after the speed test, and access is checked against several independent servers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <article class="feat reveal">
+      <div class="feat-copy">
+        <p class="kicker">Is it fast enough</p>
+        <h2>Not megabits, but an answer: will it work or not</h2>
+        <p class="lead">Download and upload speed, latency and stability, with a clear verdict for what matters to you.</p>
+        <ul class="ticks">
+          <li><b>Video calls</b> — will they run without freezing</li><li><b>Online games</b> — will there be lag</li><li><b>Full HD and 4K video</b> — will it play without buffering</li><li><b>Compared with your usual speed</b> — “usually 87 Mbps, now 21”</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="../assets/img/enough-en.webp" width="760" height="1340" alt="“Is it fast enough” screen: video calls, online games and 4K video with verdicts" loading="lazy"></div></div>
+    </article>
+
+    <article class="feat feat-rev reveal">
+      <div class="feat-copy">
+        <p class="kicker">Signal map</p>
+        <h2>Walk around your home and the map draws itself</h2>
+        <p class="lead">No floor plan needed. The app tracks your path with steps and the compass, marks where the signal is good and where it's gone, and suggests where to put the router.</p>
+        <ul class="ticks">
+          <li>Wi‑Fi and mobile signal on one map</li><li>Dead zones at a glance</li><li>A tip on where to move the router</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="../assets/img/map-en.webp" width="760" height="1340" alt="Signal map of a home: green and red zones and a mark where to put the router" loading="lazy"></div></div>
+    </article>
+
+    <article class="feat reveal">
+      <div class="feat-copy">
+        <p class="kicker">History</p>
+        <h2>Shows when your internet gets worse</h2>
+        <p class="lead">Every check is saved on your phone. The app spots patterns on its own: “the internet gets worse in the evening, 9 to 11 pm”.</p>
+        <ul class="ticks">
+          <li>Automatic check every 1, 3, 6 or 12 hours</li><li>Separately for Wi‑Fi and mobile data</li><li>A report for your provider's support in one tap, PDF included</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="../assets/img/history-en.webp" width="760" height="1340" alt="Weekly history: the internet gets worse in the evening" loading="lazy"></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="safety" id="safety">
+  <div class="wrap safety-in">
+    <div class="safety-copy reveal">
+      <p class="kicker kicker-new"><svg><use href="#i-spark"/></svg>New in 1.3</p>
+      <h2>Is it okay to type passwords on this Wi‑Fi?</h2>
+      <p class="lead">In a café, a hotel, an airport or at home. The app looks at how the network is protected, whether a look-alike network sits nearby, whether sites or DNS answers are faked, and whether anything leaks past your VPN.</p>
+      <div class="principles">
+        <div><span class="p-ico"><svg><use href="#i-proof"/></svg></span><b>Only what it can prove</b><p>The app reports a problem only when it can show it. No scare warnings “just in case”.</p></div>
+        <div><span class="p-ico"><svg><use href="#i-help"/></svg></span><b>Honest about what it doesn't know</b><p>If something couldn't be checked, it says so instead of “all good”.</p></div>
+        <div><span class="p-ico"><svg><use href="#i-shield"/></svg></span><b>“Nothing found” isn't “safe”</b><p>A clean result means no signs of an attack. Nobody can honestly promise more.</p></div>
+      </div>
+    </div>
+    <div class="safety-art reveal" aria-hidden="true">
+      <div class="phone phone-ui">
+        <div class="ui">
+          <div class="ui-status"><span>12:30</span><i></i><span class="ui-sig"><svg><use href="#i-wifi"/></svg></span></div>
+          <div class="ui-bar"><span class="ui-back"><svg><use href="#i-chevron"/></svg></span>Network safety</div>
+          <div class="ui-hero">
+            <div class="ui-row"><span class="ui-circ warn"><svg><use href="#i-alert"/></svg></span><span class="ui-pill">Something to note</span></div>
+            <b>The network has weak spots</b>
+            <span>WPA2 protection, but WPS is on</span>
+          </div>
+          <p class="ui-h">What we checked</p>
+          <ul class="ui-list">
+            <li><span class="ui-dot warn"><svg><use href="#i-alert"/></svg></span><div><small>Wi‑Fi protection</small>WPA2, but WPS is on</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Similar networks</small>No look-alike networks with weaker protection nearby</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>DNS answers</small>DNS answers honestly</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Site authenticity</small>The sites proved they are genuine</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Unencrypted pages</small>Pages arrive unchanged</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head center reveal">
+      <p class="kicker">Every check at hand</p>
+      <h2>And plenty more</h2>
+    </div>
+    <div class="bento">
+      <div class="tile reveal t-wide"><span class="t-ico"><svg><use href="#i-radar"/></svg></span><h3>Wi‑Fi radar</h3><p>Walk around with your phone and watch the signal change, with “warmer, colder” sound and vibration.</p><div class="radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-channels"/></svg></span><h3>Wi‑Fi channels</h3><p>Are neighbouring networks in the way, and which channel is free: “Your channel is busy. Try 11”.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-pulse"/></svg></span><h3>Connection monitoring</h3><p>Runs with the screen off and logs every drop: “8:17 pm — lost connection for 12 s”.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-devices"/></svg></span><h3>Devices on your network</h3><p>How many devices are on your home network right now. Label your own.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-refresh"/></svg></span><h3>Before and after a restart</h3><p>Did restarting the router help? A side-by-side in numbers.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-swap"/></svg></span><h3>Wi‑Fi or mobile, VPN or not</h3><p>Which is faster right now, and whether your VPN slows you down.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-bell"/></svg></span><h3>Remind me in 10 minutes</h3><p>If the trouble is on the provider's side, the app reminds you to check again.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-widget"/></svg></span><h3>Widget and tile</h3><p>The last result on your home screen and a check from quick settings.</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-terminal"/></svg></span><h3>For experts</h3><p>Addresses, gateway, DNS, IPv6, route and MTU. Copy it all with one tap.</p></div>
+      <div class="tile reveal t-wide t-lang"><span class="t-ico"><svg><use href="#i-lang"/></svg></span><h3>37 languages</h3><p>From Arabic to Japanese, right-to-left included. Light and dark theme.</p><div class="langs" aria-hidden="true"><span>Русский</span><span>English</span><span>Deutsch</span><span>Español</span><span>Français</span><span>Português</span><span>Türkçe</span><span>العربية</span><span>हिन्दी</span><span>日本語</span><span>한국어</span><span>中文</span><span>Українська</span><span>Polski</span><span>Italiano</span><span>Bahasa</span><span>Tiếng Việt</span><span>فارسی</span><span>עברית</span><span>Қазақ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="privacy" id="privacy">
+  <div class="wrap">
+    <div class="priv reveal">
+      <div class="priv-copy">
+        <span class="priv-shield"><svg><use href="#i-shield-check"/></svg></span>
+        <p class="kicker">Privacy</p>
+        <h2>Your internet, your business</h2>
+        <p class="lead">Everything is calculated right on your phone. We don't need to know who you are or where you are.</p>
+        <a class="link" href="../privacy/#en">Privacy policy<svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="priv-list">
+        <li><svg><use href="#i-user-off"/></svg>No sign-up or accounts</li>
+        <li><svg><use href="#i-eye-off"/></svg>No ads, analytics or trackers</li>
+        <li><svg><use href="#i-device"/></svg>History and maps stay on your phone</li>
+        <li><svg><use href="#i-cloud-off"/></svg>Data stays out of cloud backups, too</li>
+        <li><svg><use href="#i-trash"/></svg>Delete everything with one button</li>
+        <li class="priv-site">This website too: no cookies, no visitor counters, no third-party fonts.</li>
+      </ul>
+    </div>
+    <dl class="stats reveal">
+      <div><dt data-count="20">20</dt><dd>seconds to an answer</dd></div>
+      <div><dt data-count="37">37</dt><dd>languages</dd></div>
+      <div><dt>0</dt><dd>trackers</dd></div>
+      <div><dt>1.7</dt><dd>MB app size</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <h2 class="reveal">Questions</h2>
+    <div class="qa reveal">
+      <details><summary>Is it free?</summary><p>Yes. There are no ads and no paid features.</p></details>
+      <details><summary>How is it better than a regular speed test?</summary><p>A speed test gives you a number. Internet Doctor explains where it comes from — weak Wi‑Fi, a frozen router, broken DNS or a provider problem — and tells you what to do. It also checks stability, not just speed.</p></details>
+      <details><summary>Do I need to know about networks?</summary><p>No. Answers are in plain words. The numbers for experts are tucked under “Details” in case you need them.</p></details>
+      <details><summary>Why does the app ask for location?</summary><p>Android only shows the list of nearby Wi‑Fi networks with this permission. The app needs it to check channels and the network name. It never determines where you are, and everything else works without it.</p></details>
+      <details><summary>Does it work on mobile data?</summary><p>Yes. The app knows there is no router and gives advice for the mobile network: signal, carrier and balance.</p></details>
+      <details><summary>Is there an iPhone version?</summary><p>Not yet. Android 8 and newer only for now.</p></details>
+      <details><summary>How do I contact the developer?</summary><p>Write to <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>. If something goes wrong, the app also has a “Send to the developer” button.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <img src="../assets/img/icon.svg" width="76" height="76" alt="" class="cta-icon">
+      <h2>Find out what's up with your internet</h2>
+      <p class="lead">Twenty seconds, and you know whom to call and what to do.</p>
+      <div class="stores stores-inv">
+        <a class="store" href="https://play.google.com/store/apps/details?id=builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-gp" aria-hidden="true"><svg><use href="#i-download"/></svg></span><span><small>Get it on</small>Google Play</span></a><a class="store" href="https://www.rustore.ru/catalog/app/builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-ru" aria-hidden="true">R</span><span><small>Download on</small>RuStore</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="../assets/img/icon.svg" width="28" height="28" alt="">
+      <div><b>Internet Doctor</b><small>Made by a solo developer for people all over the world.</small></div>
+    </div>
+    <nav class="foot-nav">
+      <a href="../privacy/#en">Privacy policy</a>
+      <a href="mailto:strmax195@gmail.com">Contact</a>
+      <a href="../" lang="ru" data-lang="ru">Русский</a>
+    </nav>
+    <small class="copy">© 2026 Internet Doctor</small>
+  </div>
+</footer>
+
+<script src="../assets/site.js?v=1.3" defer></script>
+</body>
+</html>
