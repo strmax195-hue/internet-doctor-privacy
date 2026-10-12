@@ -3,18 +3,19 @@
 
 RUSTORE = "https://www.rustore.ru/catalog/app/builtbysolo.internetdoctor"
 GOOGLE_PLAY = "https://play.google.com/store/apps/details?id=builtbysolo.internetdoctor"
-SITE = "https://strmax195-hue.github.io/internet-doctor-privacy/"
+BASE = "https://strmax195-hue.github.io/internet-doctor-privacy/"
+SITE = BASE + "site/"
 
 T = {
     "ru": {
         "html_lang": "ru",
-        "root": "./",
+        "root": "../",
         "home": "./",
         "other_lang_href": "en/",
         "other_lang_code": "EN",
         "other_lang_name": "English",
         "url": SITE,
-        "og_image": SITE + "assets/img/og-ru.jpg",
+        "og_image": BASE + "assets/img/og-ru.jpg",
         "og_locale": "ru_RU",
         "title": "Интернет Доктор — найдёт, почему тормозит интернет",
         "description": "Приложение для Android: одна кнопка, и через 20 секунд понятно, в чём дело — Wi‑Fi, роутер или провайдер. И что сделать. Без регистрации, рекламы и трекеров.",
@@ -173,13 +174,13 @@ T = {
     },
     "en": {
         "html_lang": "en",
-        "root": "../",
+        "root": "../../",
         "home": "./",
         "other_lang_href": "../",
         "other_lang_code": "RU",
         "other_lang_name": "Русский",
         "url": SITE + "en/",
-        "og_image": SITE + "assets/img/og-en.jpg",
+        "og_image": BASE + "assets/img/og-en.jpg",
         "og_locale": "en_US",
         "title": "Internet Doctor — finds out why your internet is slow",
         "description": "An Android app: tap one button and in 20 seconds you know what's wrong — your Wi‑Fi, the router or the provider — and what to do about it. No sign-up, ads or trackers.",

@@ -1,12 +1,14 @@
 # Интернет Доктор — сайт и политика конфиденциальности
 
-Сайт приложения «Интернет Доктор» (Internet Doctor) на GitHub Pages: https://strmax195-hue.github.io/internet-doctor-privacy/
+Политика конфиденциальности (на неё ссылаются RuStore и Google Play): https://strmax195-hue.github.io/internet-doctor-privacy/
+
+Сайт приложения: https://strmax195-hue.github.io/internet-doctor-privacy/site/
 
 | Страница | Файл |
 |---|---|
-| Главная, русский | `index.html` |
-| Главная, английский | `en/index.html` |
-| Политика конфиденциальности (RU + EN) | `privacy/index.html` → `/privacy/` |
+| Политика конфиденциальности (RU + EN), адрес не менять | `index.html` |
+| Сайт, русский | `site/index.html` |
+| Сайт, английский | `site/en/index.html` |
 | Страница «не найдено» | `404.html` |
 
 ## Как менять сайт
@@ -17,7 +19,7 @@
 - `src/text.py` — все тексты на русском и английском, ссылки на магазины, сценарии живой демонстрации;
 - `assets/site.css`, `assets/site.js` — стили и поведение.
 
-После правки запустите `python3 build.py` — он перепишет `index.html` и `en/index.html`. Нужен только Python 3, без пакетов.
+После правки запустите `python3 build.py` — он перепишет `site/index.html` и `site/en/index.html`. Нужен только Python 3, без пакетов.
 
 Скриншоты в `assets/img/` вырезаны из графики магазинов (`docs/store/` в репозитории приложения): экран телефона без рамки, 760×1340, WebP.
 

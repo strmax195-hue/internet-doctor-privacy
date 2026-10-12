@@ -2,336 +2,153 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Интернет Доктор — найдёт, почему тормозит интернет</title>
-<meta name="description" content="Приложение для Android: одна кнопка, и через 20 секунд понятно, в чём дело — Wi‑Fi, роутер или провайдер. И что сделать. Без регистрации, рекламы и трекеров.">
-<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0a1020" media="(prefers-color-scheme: dark)">
-<link rel="canonical" href="https://strmax195-hue.github.io/internet-doctor-privacy/">
-<link rel="alternate" hreflang="ru" href="https://strmax195-hue.github.io/internet-doctor-privacy/">
-<link rel="alternate" hreflang="en" href="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
-<link rel="alternate" hreflang="x-default" href="https://strmax195-hue.github.io/internet-doctor-privacy/en/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Интернет Доктор — найдёт, почему тормозит интернет">
-<meta property="og:description" content="Приложение для Android: одна кнопка, и через 20 секунд понятно, в чём дело — Wi‑Fi, роутер или провайдер. И что сделать. Без регистрации, рекламы и трекеров.">
-<meta property="og:url" content="https://strmax195-hue.github.io/internet-doctor-privacy/">
-<meta property="og:image" content="https://strmax195-hue.github.io/internet-doctor-privacy/assets/img/og-ru.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="ru_RU">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="./assets/img/icon.svg" type="image/svg+xml">
-<link rel="icon" href="./assets/img/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="./assets/site.css?v=1.3">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Интернет Доктор", "operatingSystem": "Android 8.0+", "applicationCategory": "UtilitiesApplication", "description": "Приложение для Android: одна кнопка, и через 20 секунд понятно, в чём дело — Wi‑Fi, роутер или провайдер. И что сделать. Без регистрации, рекламы и трекеров.", "softwareVersion": "1.3.0", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://strmax195-hue.github.io/internet-doctor-privacy/", "image": "https://strmax195-hue.github.io/internet-doctor-privacy/assets/img/og-ru.jpg", "inLanguage": "ru"}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Интернет Доктор — политика конфиденциальности / Internet Doctor — privacy policy</title>
+<style>
+:root { --bg:#f8fafc; --card:#fff; --text:#0f172a; --muted:#475569; --accent:#2563eb; --line:#e2e8f0; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --card:#111a2e; --text:#e2e8f0; --muted:#94a3b8; --accent:#60a5fa; --line:#1e293b; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:760px; margin:0 auto; padding:24px 16px 48px; }
+nav { display:flex; gap:12px; justify-content:flex-end; margin-bottom:8px; }
+nav a, a { color:var(--accent); }
+section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:8px 24px 16px; margin-top:16px; }
+h1 { font-size:1.6rem; line-height:1.25; }
+h2 { font-size:1.15rem; margin-top:1.6em; }
+p, li { color:var(--text); }
+section > p:nth-of-type(1) { color:var(--muted); }
+ul { padding-left:1.2em; }
+</style>
 </head>
-<body data-lang="ru" data-other="en/" data-suggest="This site is also in English" data-suggest-btn="Open">
-<a class="skip" href="#main">К содержанию</a>
-<svg width="0" height="0" class="sprite" aria-hidden="true">
-  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
-  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 15.9a5 5 0 0 1 6.6 0"/><circle cx="12" cy="19.3" r="1.1" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-router" viewBox="0 0 24 24"><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 16.5h.01M10.5 16.5h.01"/><path d="M8 9.5a5.5 5.5 0 0 1 8 0"/><path d="M5.5 7a9 9 0 0 1 13 0"/><path d="M12 13v-2"/></symbol>
-  <symbol id="i-dns" viewBox="0 0 24 24"><path d="M5 4.5h11a3 3 0 0 1 3 3v12H8a3 3 0 0 1-3-3z"/><path d="M5 16.5a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></symbol>
-  <symbol id="i-isp" viewBox="0 0 24 24"><path d="M12 10v11"/><path d="M8.5 21h7"/><path d="M12 10l-3.5 11M12 10l3.5 11"/><path d="M8.2 6.2a5.3 5.3 0 0 0 0 7.6M15.8 6.2a5.3 5.3 0 0 1 0 7.6"/><path d="M5.3 3.4a9.4 9.4 0 0 0 0 13.2M18.7 3.4a9.4 9.4 0 0 1 0 13.2"/><circle cx="12" cy="10" r="1.3" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
-  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 6v7.5"/><circle cx="12" cy="17.8" r="1.2" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
-  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M7.5 12h9"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/></symbol>
-  <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4l4.4-4.6"/></symbol>
-  <symbol id="i-proof" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/><path d="M8 10.6l1.8 1.8l3.2-3.4"/></symbol>
-  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.7"/><circle cx="12" cy="17.2" r="1" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6.4-6.4"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-channels" viewBox="0 0 24 24"><path d="M3 19c2-9 4-9 6 0"/><path d="M8 19c2.5-12 5.5-12 8 0"/><path d="M15 19c2-8 4-8 6 0"/><path d="M2.5 19.5h19"/></symbol>
-  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6l5 12l2.5-6h4"/></symbol>
-  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="5" width="13" height="9.5" rx="1.5"/><path d="M6 18h6"/><rect x="17" y="8" width="4.5" height="10" rx="1.2"/></symbol>
-  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 0 5.6 7.2"/><path d="M5 3.5v4h4"/><path d="M4 12.5a8 8 0 0 0 14.4 4.3"/><path d="M19 20.5v-4h-4"/></symbol>
-  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-3.5-3.5"/><path d="M20 16H6l3.5 3.5"/></symbol>
-  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
-  <symbol id="i-widget" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/></symbol>
-  <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M6.5 9.5l3 2.5l-3 2.5M12 15h5"/></symbol>
-  <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5.5h9M8.5 3.5v2M6 5.5c.7 3.4 3 6 6 7.5M11 5.5c-.8 4-3.3 7-7 8.5"/><path d="M12.5 20.5l4-10l4 10M14 17h5"/></symbol>
-  <symbol id="i-user-off" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.8"/><path d="M4.5 20.5a7.5 7.5 0 0 1 11.6-6.3"/><path d="M17 16l4 4M21 16l-4 4"/></symbol>
-  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.6A9.7 9.7 0 0 1 12 5.5c5.5 0 9 6.5 9 6.5a17 17 0 0 1-2.6 3.4M6.3 7.3C4.2 8.8 3 12 3 12s3.5 6.5 9 6.5a8.6 8.6 0 0 0 4.2-1.1"/><path d="M9.9 10a3 3 0 0 0 4.1 4.1"/></symbol>
-  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M9.5 12l1.8 1.8L14.7 10"/></symbol>
-  <symbol id="i-cloud-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M8.5 6.6A6 6 0 0 1 17.6 10a4 4 0 0 1 3 5.6M17 18.5H7a4.5 4.5 0 0 1-1.4-8.8"/></symbol>
-  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6.5 6.5l.9 13.5h9.2l.9-13.5"/></symbol>
-  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v12M7 11l5 5l5-5"/><path d="M4.5 20.5h15"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6l-6 6"/></symbol>
-  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4.5v4h-4"/></symbol>
-  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-</svg>
-
-<header class="top" id="top">
-  <div class="wrap top-in">
-    <a class="brand" href="./" aria-label="Интернет Доктор">
-      <img src="./assets/img/icon.svg" width="34" height="34" alt="">
-      <span>Интернет Доктор</span>
-    </a>
-    <nav class="nav" aria-label="Меню">
-      <a href="#how">Как работает</a>
-      <a href="#features">Возможности</a>
-      <a href="#safety">Безопасность</a>
-      <a href="#privacy">Приватность</a>
-      <a href="#faq">Вопросы</a>
-    </nav>
-    <div class="top-act">
-      <a class="lang" href="en/" hreflang="en" lang="en" title="English" data-lang="en"><svg><use href="#i-globe"/></svg>EN</a>
-      <a class="btn btn-sm" href="#get">Скачать</a>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-<section class="hero">
-  <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-  <div class="wrap hero-in">
-    <div class="hero-copy">
-      <a class="pill pill-new reveal" href="#safety"><svg><use href="#i-spark"/></svg>Новое в 1.3 — «Безопасна ли эта сеть?»<svg class="chev"><use href="#i-chevron"/></svg></a>
-      <h1 class="reveal">Найдёт, почему <span class="grad">тормозит интернет</span></h1>
-      <p class="lead reveal">Одна кнопка — и через 20 секунд понятный ответ: дело в Wi‑Fi, в роутере или у провайдера. И что с этим сделать, по шагам.</p>
-      <div class="stores reveal" id="get">
-        <a class="store" href="https://www.rustore.ru/catalog/app/builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-ru" aria-hidden="true">R</span><span><small>Скачать в</small>RuStore</span></a><a class="store" href="https://play.google.com/store/apps/details?id=builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-gp" aria-hidden="true"><svg><use href="#i-download"/></svg></span><span><small>Доступно в</small>Google Play</span></a>
-      </div>
-      <p class="note reveal">Бесплатно · Android 8 и новее · меньше 2 МБ</p>
-      <ul class="chips reveal">
-        <li><svg><use href="#i-user-off"/></svg>Без регистрации</li>
-        <li><svg><use href="#i-eye-off"/></svg>Без рекламы</li>
-        <li><svg><use href="#i-device"/></svg>Всё на телефоне</li>
-      </ul>
-    </div>
-    <div class="hero-art reveal">
-      <div class="phone phone-hero">
-        <img src="./assets/img/result-ru.webp" width="760" height="1340" alt="Экран результата: «Wi‑Fi слабый, проблема внутри домашней сети», ниже скорость, задержка и стабильность" fetchpriority="high">
-      </div>
-      <div class="float float-1"><span class="dot ok"></span><div><b>Задержка 63 мс</b><small>хорошо</small></div></div>
-      <div class="float float-2"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><b>Провайдер в порядке</b><small>проблема дома</small></div></div>
-    </div>
-  </div>
+<body>
+<main>
+<nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
+<section id="ru" lang="ru">
+<h1>Политика конфиденциальности приложения «Интернет Доктор»</h1>
+<p>Дата вступления в силу: 28 сентября 2026 года (версия приложения 1.1.0).</p>
+<p>Коротко: приложение не собирает о вас никаких данных. Всё, что оно измеряет и запоминает, остаётся на вашем телефоне.</p>
+<h2>Кто отвечает за приложение</h2>
+<p>Приложение «Интернет Доктор» разработано и распространяется частным разработчиком. По всем вопросам о конфиденциальности пишите на <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
+<h2>Что приложение не делает</h2>
+<ul>
+<li>Не требует регистрации и не создаёт аккаунтов.</li>
+<li>Не содержит аналитических SDK, рекламных и прочих трекеров.</li>
+<li>Не передаёт разработчику и третьим лицам результаты проверок, историю или сведения об устройстве.</li>
+<li>Не определяет ваше местоположение и не запрашивает номер телефона, контакты и фото. К файлам обращается, только когда вы сами выбираете файл: чтобы сохранить или восстановить копию данных или сохранить таблицу истории.</li>
+<li>Не показывает рекламу.</li>
+</ul>
+<h2>Какие данные хранятся на телефоне</h2>
+<ul>
+<li>История проверок: время, тип подключения, скорость, задержка, потери, краткий итог.</li>
+<li>Карты сигнала: пройденный путь в относительных метрах (без адреса и координат) и уровень сигнала Wi-Fi и мобильной сети в точках пути.</li>
+<li>Места, сохранённые в Wi-Fi радаре, и подписи устройств домашней сети — только те названия, которые вы задали сами.</li>
+<li>Настройки приложения, в том числе выбранный язык.</li>
+</ul>
+<ul>
+<li>Цифры последней проверки (без имени сети) — чтобы результат открылся, если система выгрузит приложение из памяти.</li>
+<li>Объём трафика, израсходованного приложением за месяц, — чтобы показать его в «Приватности».</li>
+</ul>
+<p>Эти данные хранятся только в памяти приложения на вашем телефоне. Они исключены из облачных резервных копий и переноса на другое устройство. Удалить их можно в приложении («Приватность → Удалить все данные») или удалив приложение.</p>
+<h2>Копия данных, таблица и картинки</h2>
+<p>В разделе «Приватность → Ваши данные» можно сохранить копию истории, карт и подписей в файл, восстановить данные из такого файла и выгрузить историю в таблицу CSV. Файл сохраняется туда, куда вы сами укажете (на телефон или в облачное хранилище, которое вы выбрали в системном окне). Приложение не отправляет эти файлы разработчику.</p>
+<p>Картинку с результатом и PDF-отчёт приложение делает на телефоне и передаёт только в то приложение, которое вы выберете, нажав «Поделиться» или «Отправить PDF».</p>
+<h2>Какие сетевые запросы выполняются</h2>
+<p>Чтобы измерить интернет, приложение обращается к общедоступным серверам:</p>
+<ul>
+<li>скачивает тестовые данные для замера скорости загрузки с ближайшего из серверов Cloudflare, Hetzner, OVH, Yandex и Selectel (сервер выбирается автоматически по короткому пробному замеру; перед этим приложение узнаёт у Cloudflare код ближайшего узла, чтобы показать, до какого города мерили);</li>
+<li>отправляет случайные тестовые данные для замера скорости отдачи на ближайший сервер; эти данные сразу отбрасываются;</li>
+<li>устанавливает короткие соединения с публичными DNS-серверами (Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9, OpenDNS, AdGuard) для оценки задержки;</li>
+<li>проверяет, открываются ли google.com, cloudflare.com, wikipedia.org и apple.com, и отправляет DNS-запросы для этих адресов;</li>
+<li>на экране «Для специалистов», если вы нажмёте кнопку проверки, — отправляет системные ping-запросы к 1.1.1.1 и узлам по пути к нему (маршрут и MTU) и соединяется с 2606:4700:4700::1111 (проверка IPv6).</li>
+</ul>
+<p>Это обычные запросы, как у браузера: в них нет вашего имени, номера телефона или идентификаторов устройства. Как и любой сайт, эти серверы видят IP-адрес, с которого пришёл запрос, и обрабатывают его по своим правилам. Приложение не передаёт им никаких других сведений.</p>
+<p>Поиск устройств в сети и проверка роутера работают только внутри вашей домашней сети.</p>
+<h2>Автопроверка</h2>
+<p>Если вы включите автопроверку, приложение с выбранной вами частотой (раз в 1, 3, 6 или 12 часов) выполняет короткую проверку по Wi-Fi и сохраняет результат в историю на телефоне. В экономном режиме скорость не замеряется. По желанию раз в день приходит уведомление со сводкой. По умолчанию автопроверка выключена.</p>
+<h2>Разрешения</h2>
+<ul>
+<li>Интернет и состояние сети — для замеров и определения типа подключения.</li>
+<li>Геолокация (или «Устройства Wi-Fi поблизости» на Android 13+) — только для проверки каналов Wi-Fi и названия вашей сети: Android выдаёт список соседних сетей лишь с этим разрешением. Приложение не определяет ваше местоположение. Без разрешения остальные функции работают.</li>
+<li>Датчики движения (без отдельного разрешения) — для карты сигнала: по шагам и повороту телефона приложение рисует путь по квартире. Данные датчиков не сохраняются и никуда не передаются.</li>
+<li>Вибрация — для отклика Wi-Fi радара.</li>
+<li>Запуск после перезагрузки — чтобы автопроверка продолжала работать, если вы её включили.</li>
+<li>Уведомления (Android 13+) — только для наблюдения за связью и дневной сводки, если вы их включили.</li>
+<li>Фоновая служба и запрет сна — чтобы наблюдение за связью, которое вы запустили, не прерывалось при выключенном экране. Пока оно идёт, видно уведомление с кнопкой «Остановить».</li>
+</ul>
+<h2>Виджет и плитка</h2>
+<p>Виджет на рабочем столе и плитка в быстрых настройках показывают итог последней проверки из истории на телефоне и ничего не отправляют.</p>
+<h2>Отчёт для техподдержки</h2>
+<p>Отчёт (текст или PDF) формируется на телефоне и отправляется, только если вы сами нажмёте «Отправить» и выберете, куда. В отчёте есть только результаты проверки: время, скорость, задержка, потери, состояние DNS.</p>
+<h2>Дети</h2>
+<p>Приложение не собирает персональные данные, в том числе данные детей.</p>
+<h2>Изменения политики</h2>
+<p>Если политика изменится, новая версия появится в приложении и по этой ссылке с новой датой вступления в силу.</p>
+<h2>Контакты</h2>
+<p>Вопросы о конфиденциальности: <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a></p>
 </section>
-
-<section class="how" id="how">
-  <div class="wrap">
-    <div class="head center">
-      <p class="kicker">Как он думает</p>
-      <h2>Проверяет всю цепочку и находит слабое звено</h2>
-      <p class="lead">Телефон, Wi‑Fi, роутер, DNS, провайдер, интернет. Приложение проходит их по очереди и показывает, где именно сбой. Выберите ситуацию:</p>
-    </div>
-    <div class="demo" id="demo" data-todo="Что сделать" data-enough="Хватит ли интернета" data-demo="{&quot;wifi&quot;: {&quot;nodes&quot;: &quot;ok warn ok ok ok ok&quot;, &quot;tone&quot;: &quot;warn&quot;, &quot;eyebrow&quot;: &quot;Есть замечание&quot;, &quot;title&quot;: &quot;Wi‑Fi слабый&quot;, &quot;text&quot;: &quot;Интернет от провайдера работает нормально. Скорость падает из-за качества сигнала между телефоном и роутером.&quot;, &quot;where&quot;: &quot;Проблема внутри домашней сети&quot;, &quot;steps&quot;: [&quot;Подойдите ближе к роутеру&quot;, &quot;Переставьте роутер выше и ближе к центру квартиры — не на пол, не в шкаф и не за телевизор&quot;, &quot;Найдите места со слабым сигналом на «Карте сигнала»&quot;]}, &quot;isp&quot;: {&quot;nodes&quot;: &quot;ok ok ok na bad na&quot;, &quot;tone&quot;: &quot;bad&quot;, &quot;eyebrow&quot;: &quot;Проблема найдена&quot;, &quot;title&quot;: &quot;Похоже на проблему провайдера&quot;, &quot;text&quot;: &quot;Wi‑Fi соединение с роутером стабильное, но доступа во внешний интернет нет. Значит, обрыв где-то между роутером и провайдером.&quot;, &quot;where&quot;: &quot;Проблема не в телефоне и не в Wi‑Fi&quot;, &quot;steps&quot;: [&quot;Перезагрузите роутер — иногда он теряет связь с провайдером&quot;, &quot;Проверьте баланс в личном кабинете провайдера&quot;, &quot;Позвоните провайдеру и отправьте отчёт из приложения — там все нужные данные&quot;]}, &quot;dns&quot;: {&quot;nodes&quot;: &quot;ok ok ok bad ok ok&quot;, &quot;tone&quot;: &quot;bad&quot;, &quot;eyebrow&quot;: &quot;Проблема найдена&quot;, &quot;title&quot;: &quot;Похоже, проблема с DNS&quot;, &quot;text&quot;: &quot;Интернет есть, но телефон не может узнать адреса сайтов — поэтому они не открываются.&quot;, &quot;where&quot;: &quot;Проблема не в телефоне и не в Wi‑Fi&quot;, &quot;steps&quot;: [&quot;Перезагрузите роутер&quot;, &quot;В настройках телефона включите «Частный DNS» и укажите адрес надёжного DNS-сервера&quot;, &quot;Если не помогло — сообщите провайдеру, что не работает DNS&quot;]}, &quot;ok&quot;: {&quot;nodes&quot;: &quot;ok ok ok ok ok ok&quot;, &quot;tone&quot;: &quot;ok&quot;, &quot;eyebrow&quot;: &quot;Всё в порядке&quot;, &quot;title&quot;: &quot;Интернет работает отлично&quot;, &quot;text&quot;: &quot;Загрузка 87 Мбит/с, задержка 25 мс, потерь нет.&quot;, &quot;where&quot;: &quot;&quot;, &quot;enough&quot;: [&quot;Видеозвонки — связь отличная&quot;, &quot;Онлайн-игры — отлично&quot;, &quot;Видео 4K — подходит&quot;]}}">
-      <div class="tabs" role="tablist">
-        <button role="tab" aria-selected="true" data-sc="wifi">Слабый Wi‑Fi</button>
-        <button role="tab" aria-selected="false" data-sc="isp">Сбой у провайдера</button>
-        <button role="tab" aria-selected="false" data-sc="dns">Сайты не открываются</button>
-        <button role="tab" aria-selected="false" data-sc="ok">Всё отлично</button>
-      </div>
-      <div class="demo-card">
-        <ol class="chain" aria-hidden="true">
-          <li data-n="0"><span class="node"><svg><use href="#i-phone"/></svg><em class="badge"></em></span><span class="lbl">Телефон</span></li>
-          <li data-n="1"><span class="node"><svg><use href="#i-wifi"/></svg><em class="badge"></em></span><span class="lbl">Wi‑Fi</span></li>
-          <li data-n="2"><span class="node"><svg><use href="#i-router"/></svg><em class="badge"></em></span><span class="lbl">Роутер</span></li>
-          <li data-n="3"><span class="node"><svg><use href="#i-dns"/></svg><em class="badge"></em></span><span class="lbl">DNS</span></li>
-          <li data-n="4"><span class="node"><svg><use href="#i-isp"/></svg><em class="badge"></em></span><span class="lbl">Провайдер</span></li>
-          <li data-n="5"><span class="node"><svg><use href="#i-globe"/></svg><em class="badge"></em></span><span class="lbl">Интернет</span></li>
-        </ol>
-        <div class="verdict" aria-live="polite">
-          <div class="v-wait"><span class="spin"></span>Проверяем…</div>
-          <div class="v-body" hidden>
-            <div class="v-main">
-              <div class="v-top"><span class="v-ico"></span><span class="v-eyebrow"></span></div>
-              <h3 class="v-title"></h3>
-              <p class="v-text"></p>
-              <p class="v-where"><svg><use href="#i-pin"/></svg><span></span></p>
-            </div>
-            <div class="v-side">
-              <p class="v-side-h"></p>
-              <ol class="v-steps"></ol>
-              <button class="replay" type="button"><svg><use href="#i-play"/></svg>Проверить ещё раз</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="fine center">Не ведётся на случайный хороший результат: задержку меряет до и после теста скорости, а доступ проверяет по нескольким независимым узлам.</p>
-    </div>
-  </div>
+<section id="en" lang="en">
+<h1>Privacy policy of the Internet Doctor app</h1>
+<p>Effective date: 28 September 2026 (app version 1.1.0).</p>
+<p>In short: the app does not collect any data about you. Everything it measures and remembers stays on your phone.</p>
+<h2>Who is responsible for the app</h2>
+<p>The Internet Doctor app is developed and distributed by a private developer. For any privacy questions, write to <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
+<h2>What the app does not do</h2>
+<ul>
+<li>It does not require sign-up and does not create accounts.</li>
+<li>It contains no analytics SDKs, ad trackers or other trackers.</li>
+<li>It does not send check results, history or device information to the developer or third parties.</li>
+<li>It does not determine your location and does not ask for your phone number, contacts or photos. It accesses files only when you pick a file yourself: to save or restore a backup or to save the history spreadsheet.</li>
+<li>It does not show ads.</li>
+</ul>
+<h2>What data is stored on the phone</h2>
+<ul>
+<li>Check history: time, connection type, speed, latency, loss, short result.</li>
+<li>Signal maps: the walked path in relative metres (no address or coordinates) and the Wi-Fi and mobile signal levels along it.</li>
+<li>Places saved in the Wi-Fi radar and home network device labels: only the names you entered yourself.</li>
+<li>App settings, including the chosen language.</li>
+</ul>
+<ul>
+<li>The numbers of the latest check (without the network name), so the result opens again if the system unloads the app.</li>
+<li>The amount of data the app used this month, to show it under "Privacy".</li>
+</ul>
+<p>This data is stored only in the app's storage on your phone. It is excluded from cloud backups and device transfer. You can delete it in the app ("Privacy → Delete all data") or by uninstalling the app.</p>
+<h2>Backup, spreadsheet and images</h2>
+<p>Under "Privacy → Your data" you can save a backup of the history, maps and labels to a file, restore data from such a file and export the history to a CSV spreadsheet. The file is saved where you choose (on the phone or in the cloud storage you pick in the system dialog). The app does not send these files to the developer.</p>
+<p>The result image and the PDF report are made on the phone and passed only to the app you choose after tapping "Share" or "Send PDF".</p>
+<h2>What network requests are made</h2>
+<p>To measure the internet, the app contacts public servers:</p>
+<ul>
+<li>it downloads test data to measure download speed from the nearest of the Cloudflare, Hetzner, OVH, Yandex and Selectel servers (chosen automatically by a short trial measurement; before that, the app asks Cloudflare for the code of its nearest location to show which city was measured);</li>
+<li>it sends random test data to the nearest server to measure upload speed; this data is discarded immediately;</li>
+<li>it opens short connections to public DNS servers (Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9, OpenDNS, AdGuard) to estimate latency;</li>
+<li>it checks whether google.com, cloudflare.com, wikipedia.org and apple.com open, and sends DNS queries for these addresses;</li>
+<li>on the "For experts" screen, if you tap the check button, it sends system ping requests to 1.1.1.1 and the hops on the way to it (route and MTU) and connects to 2606:4700:4700::1111 (IPv6 check).</li>
+</ul>
+<p>These are ordinary requests, like a browser makes: they contain no name, phone number or device identifiers. Like any website, these servers see the IP address the request came from and process it under their own rules. The app sends them nothing else.</p>
+<p>Device search and the router check work only inside your home network.</p>
+<h2>Auto-check</h2>
+<p>If you turn on auto-check, the app runs a short check over Wi-Fi as often as you choose (every 1, 3, 6 or 12 hours) and saves the result to the history on the phone. In the light mode, speed is not measured. Optionally, a daily summary notification is shown. Auto-check is off by default.</p>
+<h2>Permissions</h2>
+<ul>
+<li>Internet and network state: for measurements and detecting the connection type.</li>
+<li>Location (or "Nearby Wi-Fi devices" on Android 13+): only for checking Wi-Fi channels and your network name, because Android provides the list of nearby networks only with this permission. The app does not determine your location. Everything else works without it.</li>
+<li>Motion sensors (no separate permission): for the signal map, the app draws your path through the home from steps and phone orientation. Sensor data is not saved or sent anywhere.</li>
+<li>Vibration: for Wi-Fi radar feedback.</li>
+<li>Start after reboot: so that auto-check keeps working if you turned it on.</li>
+<li>Notifications (Android 13+): only for the connection watch and the daily summary, if you turned them on.</li>
+<li>Foreground service and keeping the device awake: so that a connection watch you started is not interrupted while the screen is off. While it runs, a notification with a "Stop" button is shown.</li>
+</ul>
+<h2>Widget and tile</h2>
+<p>The home-screen widget and the quick-settings tile show the latest result from the history on the phone and send nothing.</p>
+<h2>Report for support</h2>
+<p>The report (text or PDF) is created on the phone and is sent only if you tap "Send" and choose where yourself. It contains only check results: time, speed, latency, loss and DNS status.</p>
+<h2>Children</h2>
+<p>The app does not collect personal data, including children's data.</p>
+<h2>Changes to this policy</h2>
+<p>If the policy changes, the new version will appear in the app and at this link with a new effective date.</p>
+<h2>Contact</h2>
+<p>Privacy questions: <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a></p>
 </section>
-
-<section class="features" id="features">
-  <div class="wrap">
-    <article class="feat reveal">
-      <div class="feat-copy">
-        <p class="kicker">Хватит ли интернета</p>
-        <h2>Не мегабиты, а ответ: потянет или нет</h2>
-        <p class="lead">Скорость загрузки и отдачи, задержка и стабильность — сразу с выводом для того, что вам важно.</p>
-        <ul class="ticks">
-          <li><b>Видеозвонки</b> — будет ли связь без зависаний</li><li><b>Онлайн-игры</b> — не будет ли задержек в игре</li><li><b>Видео в Full HD и 4K</b> — пойдёт ли без буферизации</li><li><b>Сравнение с обычной скоростью</b> — «обычно у вас 87 Мбит/с, сейчас 21»</li>
-        </ul>
-      </div>
-      <div class="feat-art"><div class="phone"><img src="./assets/img/enough-ru.webp" width="760" height="1340" alt="Экран «Хватит ли интернета»: видеозвонки, онлайн-игры и видео 4K с выводами" loading="lazy"></div></div>
-    </article>
-
-    <article class="feat feat-rev reveal">
-      <div class="feat-copy">
-        <p class="kicker">Карта сигнала</p>
-        <h2>Пройдитесь по квартире — карта нарисуется сама</h2>
-        <p class="lead">Не нужно чертить план. Приложение строит путь по шагам и компасу, отмечает, где сигнал хороший, а где его нет, и подсказывает, куда лучше поставить роутер.</p>
-        <ul class="ticks">
-          <li>Wi‑Fi и мобильная сеть на одной карте</li><li>Мёртвые зоны видно сразу</li><li>Совет, куда переставить роутер</li>
-        </ul>
-      </div>
-      <div class="feat-art"><div class="phone"><img src="./assets/img/map-ru.webp" width="760" height="1340" alt="Карта сигнала квартиры: зелёные и красные зоны, отмечено, куда поставить роутер" loading="lazy"></div></div>
-    </article>
-
-    <article class="feat reveal">
-      <div class="feat-copy">
-        <p class="kicker">История</p>
-        <h2>Покажет, когда интернет работает хуже</h2>
-        <p class="lead">Каждая проверка сохраняется на телефоне. Приложение само замечает закономерности: «интернет чаще ухудшается вечером, с 21:00 до 23:00».</p>
-        <ul class="ticks">
-          <li>Автопроверка раз в 1, 3, 6 или 12 часов</li><li>Отдельно для Wi‑Fi и мобильной сети</li><li>Отчёт для техподдержки провайдера одной кнопкой, в том числе в PDF</li>
-        </ul>
-      </div>
-      <div class="feat-art"><div class="phone"><img src="./assets/img/history-ru.webp" width="760" height="1340" alt="История за неделю: интернет чаще ухудшается вечером, с 21:00 до 23:00" loading="lazy"></div></div>
-    </article>
-  </div>
-</section>
-
-<section class="safety" id="safety">
-  <div class="wrap safety-in">
-    <div class="safety-copy reveal">
-      <p class="kicker kicker-new"><svg><use href="#i-spark"/></svg>Новое в 1.3</p>
-      <h2>Можно ли вводить пароли в этом Wi‑Fi?</h2>
-      <p class="lead">В кафе, гостинице, аэропорту или дома. Приложение смотрит, чем защищена сеть, нет ли рядом двойника с тем же именем, не подменяют ли сайты и ответы DNS.</p>
-      <div class="principles">
-        <div><span class="p-ico"><svg><use href="#i-proof"/></svg></span><b>Только доказанное</b><p>Приложение сообщает о проблеме, только когда может её показать. Никаких страшилок «на всякий случай».</p></div>
-        <div><span class="p-ico"><svg><use href="#i-help"/></svg></span><b>Честно о том, чего не знаем</b><p>Если что-то проверить не удалось, так и будет написано, а не «всё хорошо».</p></div>
-        <div><span class="p-ico"><svg><use href="#i-shield"/></svg></span><b>«Ничего не найдено» — не «безопасно»</b><p>Чистый результат значит, что признаков атаки нет. Обещать большего никто честно не может.</p></div>
-      </div>
-    </div>
-    <div class="safety-art reveal" aria-hidden="true">
-      <div class="phone phone-ui">
-        <div class="ui">
-          <div class="ui-status"><span>12:30</span><i></i><span class="ui-sig"><svg><use href="#i-wifi"/></svg></span></div>
-          <div class="ui-bar"><span class="ui-back"><svg><use href="#i-chevron"/></svg></span>Безопасность сети</div>
-          <div class="ui-hero">
-            <div class="ui-row"><span class="ui-circ warn"><svg><use href="#i-alert"/></svg></span><span class="ui-pill">Есть замечания</span></div>
-            <b>У сети есть слабые места</b>
-            <span>Защита WPA2, но включён WPS</span>
-          </div>
-          <p class="ui-h">Что проверили</p>
-          <ul class="ui-list">
-            <li><span class="ui-dot warn"><svg><use href="#i-alert"/></svg></span><div><small>Защита Wi‑Fi</small>WPA2, но включён WPS</div></li>
-            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Похожие сети</small>Двойников с более слабой защитой рядом нет</div></li>
-            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Ответы DNS</small>DNS отвечает честно</div></li>
-            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Подлинность сайтов</small>Сайты доказали, что настоящие</div></li>
-            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>Незашифрованные страницы</small>Страницы приходят без изменений</div></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="more">
-  <div class="wrap">
-    <div class="head center reveal">
-      <p class="kicker">Все проверки под рукой</p>
-      <h2>И ещё много полезного</h2>
-    </div>
-    <div class="bento">
-      <div class="tile reveal t-wide"><span class="t-ico"><svg><use href="#i-radar"/></svg></span><h3>Wi‑Fi радар</h3><p>Ходите с телефоном — сигнал меняется на глазах. Со звуком и вибрацией «теплее-холоднее».</p><div class="radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-channels"/></svg></span><h3>Каналы Wi‑Fi</h3><p>Не мешают ли соседские сети и какой канал свободнее: «Ваш канал перегружен. Попробуйте 11».</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-pulse"/></svg></span><h3>Наблюдение за связью</h3><p>Работает при выключенном экране и записывает каждый обрыв: «20:17 — потеря связи 12 сек».</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-devices"/></svg></span><h3>Устройства в сети</h3><p>Сколько устройств сейчас в домашней сети. Можно подписать свои.</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-refresh"/></svg></span><h3>До и после перезагрузки</h3><p>Помогла ли перезагрузка роутера — сравнение в цифрах.</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-swap"/></svg></span><h3>Wi‑Fi или мобильный</h3><p>Что сейчас быстрее: домашний Wi‑Fi или мобильный интернет.</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-bell"/></svg></span><h3>Напомнить через 10 минут</h3><p>Если сбой у провайдера, приложение напомнит проверить ещё раз.</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-widget"/></svg></span><h3>Виджет и плитка</h3><p>Последний результат на рабочем столе и проверка из шторки.</p></div>
-      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-terminal"/></svg></span><h3>Для специалистов</h3><p>Адреса, шлюз, DNS, IPv6, маршрут и MTU. Всё копируется одной кнопкой.</p></div>
-      <div class="tile reveal t-wide t-lang"><span class="t-ico"><svg><use href="#i-lang"/></svg></span><h3>37 языков</h3><p>От арабского до японского, с письмом справа налево. Светлая и тёмная тема.</p><div class="langs" aria-hidden="true"><span>Русский</span><span>English</span><span>Deutsch</span><span>Español</span><span>Français</span><span>Português</span><span>Türkçe</span><span>العربية</span><span>हिन्दी</span><span>日本語</span><span>한국어</span><span>中文</span><span>Українська</span><span>Polski</span><span>Italiano</span><span>Bahasa</span><span>Tiếng Việt</span><span>فارسی</span><span>עברית</span><span>Қазақ</span></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="privacy" id="privacy">
-  <div class="wrap">
-    <div class="priv reveal">
-      <div class="priv-copy">
-        <span class="priv-shield"><svg><use href="#i-shield-check"/></svg></span>
-        <p class="kicker">Приватность</p>
-        <h2>Ваш интернет — ваше дело</h2>
-        <p class="lead">Всё считается прямо на телефоне. Нам не нужно знать, кто вы и где вы.</p>
-        <a class="link" href="./privacy/">Политика конфиденциальности<svg><use href="#i-arrow"/></svg></a>
-      </div>
-      <ul class="priv-list">
-        <li><svg><use href="#i-user-off"/></svg>Без регистрации и аккаунтов</li>
-        <li><svg><use href="#i-eye-off"/></svg>Без рекламы, аналитики и трекеров</li>
-        <li><svg><use href="#i-device"/></svg>История и карты хранятся только на телефоне</li>
-        <li><svg><use href="#i-cloud-off"/></svg>Данные не попадают даже в облачные копии</li>
-        <li><svg><use href="#i-trash"/></svg>Всё удаляется одной кнопкой</li>
-        <li class="priv-site">И этот сайт тоже: без cookies, счётчиков посещений и сторонних шрифтов.</li>
-      </ul>
-    </div>
-    <dl class="stats reveal">
-      <div><dt data-count="20">20</dt><dd>секунд до ответа</dd></div>
-      <div><dt data-count="37">37</dt><dd>языков</dd></div>
-      <div><dt>0</dt><dd>трекеров</dd></div>
-      <div><dt>1,7</dt><dd>МБ — размер приложения</dd></div>
-    </dl>
-  </div>
-</section>
-
-<section class="faq" id="faq">
-  <div class="wrap faq-in">
-    <h2 class="reveal">Вопросы</h2>
-    <div class="qa reveal">
-      <details><summary>Это бесплатно?</summary><p>Да. В приложении нет рекламы и платных функций.</p></details>
-      <details><summary>Чем это лучше обычного теста скорости?</summary><p>Тест скорости показывает цифру. Интернет Доктор объясняет, откуда она взялась: слабый Wi‑Fi, завис роутер, сбоит DNS или проблема у провайдера, — и говорит, что сделать. Ещё он проверяет стабильность, а не только скорость.</p></details>
-      <details><summary>Нужно ли разбираться в сетях?</summary><p>Нет. Ответы написаны обычными словами. Цифры для специалистов спрятаны под «Подробнее», если они вам понадобятся.</p></details>
-      <details><summary>Зачем приложению геолокация?</summary><p>Android показывает список соседних сетей Wi‑Fi только с этим разрешением. Оно нужно для проверки каналов и названия сети. Ваше местоположение приложение не определяет, а без разрешения всё остальное работает.</p></details>
-      <details><summary>Что с мобильным интернетом?</summary><p>Всё работает. Приложение понимает, что роутера нет, и даёт советы для мобильной сети: про сигнал, оператора и баланс.</p></details>
-      <details><summary>Есть ли версия для iPhone?</summary><p>Пока только Android, начиная с версии 8.</p></details>
-      <details><summary>Как связаться с разработчиком?</summary><p>Пишите на <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>. В приложении есть кнопка «Отправить разработчику», если что-то пошло не так.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="wrap">
-    <div class="cta-box reveal">
-      <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <img src="./assets/img/icon.svg" width="76" height="76" alt="" class="cta-icon">
-      <h2>Узнайте, что с вашим интернетом</h2>
-      <p class="lead">Двадцать секунд — и вы знаете, кому звонить и что делать.</p>
-      <div class="stores stores-inv">
-        <a class="store" href="https://www.rustore.ru/catalog/app/builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-ru" aria-hidden="true">R</span><span><small>Скачать в</small>RuStore</span></a><a class="store" href="https://play.google.com/store/apps/details?id=builtbysolo.internetdoctor" rel="noopener"><span class="store-ico store-gp" aria-hidden="true"><svg><use href="#i-download"/></svg></span><span><small>Доступно в</small>Google Play</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
 </main>
-
-<footer class="foot">
-  <div class="wrap foot-in">
-    <div class="foot-brand">
-      <img src="./assets/img/icon.svg" width="28" height="28" alt="">
-      <div><b>Интернет Доктор</b><small>Сделано одним разработчиком для людей по всему миру.</small></div>
-    </div>
-    <nav class="foot-nav">
-      <a href="./privacy/">Политика конфиденциальности</a>
-      <a href="mailto:strmax195@gmail.com">Связаться</a>
-      <a href="en/" lang="en" data-lang="en">English</a>
-    </nav>
-    <small class="copy">© 2026 Интернет Доктор</small>
-  </div>
-</footer>
-
-<script src="./assets/site.js?v=1.3" defer></script>
 </body>
 </html>

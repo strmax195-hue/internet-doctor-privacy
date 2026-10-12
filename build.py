@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the site: index.html (Russian) and en/index.html (English) from src/.
+"""Builds the site: site/index.html (Russian) and site/en/index.html (English) from src/.
 
 Run after changing src/page.html or src/text.py:  python3 build.py
 The generated pages are committed, so GitHub Pages serves them as they are.
@@ -103,7 +103,7 @@ def render(lang):
 
 
 def main():
-    for lang, path in (("ru", "index.html"), ("en", os.path.join("en", "index.html"))):
+    for lang, path in (("ru", os.path.join("site", "index.html")), ("en", os.path.join("site", "en", "index.html"))):
         out = os.path.join(ROOT, path)
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, "w", encoding="utf-8") as f:
