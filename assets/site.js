@@ -19,7 +19,10 @@
         if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
-    reveals.forEach(function (el) { io.observe(el); });
+    // Only blocks below the first screen start hidden, so the page is complete at rest.
+    reveals.forEach(function (el) {
+      if (el.getBoundingClientRect().top > window.innerHeight) { el.classList.add("pre"); io.observe(el); }
+    });
   } else {
     reveals.forEach(function (el) { el.classList.add("in"); });
   }

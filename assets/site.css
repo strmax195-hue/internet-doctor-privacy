@@ -24,7 +24,7 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0a1020;
     --bg-2: #0e1628;
     --card: #121b30;
@@ -45,6 +45,27 @@
     --shadow-lg: 0 2px 6px rgba(0, 0, 0, .3), 0 30px 60px -12px rgba(0, 0, 0, .6);
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+    --bg: #0a1020;
+    --bg-2: #0e1628;
+    --card: #121b30;
+    --text: #e8edf7;
+    --muted: #a3aec4;
+    --faint: #6f7b94;
+    --line: #1f2a42;
+    --accent: #5b8cff;
+    --accent-2: #3d6fe8;
+    --accent-soft: #17254a;
+    --ok: #34c46a;
+    --ok-soft: #12301f;
+    --warn: #f0a32a;
+    --warn-soft: #33270f;
+    --bad: #ff6369;
+    --bad-soft: #3a171a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
+    --shadow-lg: 0 2px 6px rgba(0, 0, 0, .3), 0 30px 60px -12px rgba(0, 0, 0, .6);
+    color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -78,7 +99,7 @@ h2 { font-size: clamp(32px, 4.4vw, 50px); margin-bottom: 18px; }
 
 /* ---------- header ---------- */
 .top {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
   background: color-mix(in srgb, var(--bg) 78%, transparent);
   backdrop-filter: saturate(1.6) blur(16px); -webkit-backdrop-filter: saturate(1.6) blur(16px);
   border-bottom: 1px solid transparent; transition: border-color .2s;
@@ -392,8 +413,8 @@ h2 { font-size: clamp(32px, 4.4vw, 50px); margin-bottom: 18px; }
 .suggest button { background: none; border: 0; color: inherit; opacity: .6; font-size: 20px; cursor: pointer; padding: 0 6px; line-height: 1; }
 
 /* scroll reveal */
-.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s cubic-bezier(.2, .8, .2, 1), transform .8s cubic-bezier(.2, .8, .2, 1); }
-.js .reveal.in { opacity: 1; transform: none; }
+.js .reveal.pre { opacity: 0; transform: translateY(22px); transition: opacity .8s cubic-bezier(.2, .8, .2, 1), transform .8s cubic-bezier(.2, .8, .2, 1); }
+.js .reveal.pre.in { opacity: 1; transform: none; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1020px) {
