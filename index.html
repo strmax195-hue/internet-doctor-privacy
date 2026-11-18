@@ -25,7 +25,7 @@ ul { padding-left:1.2em; }
 <nav><a href="#ru">Русский</a><a href="#en">English</a></nav>
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности приложения «Интернет Доктор»</h1>
-<p>Дата вступления в силу: 28 сентября 2026 года (версия приложения 1.1.0).</p>
+<p>Дата вступления в силу: 18 ноября 2026 года (версия приложения 1.5.0).</p>
 <p>Коротко: приложение не собирает о вас никаких данных. Всё, что оно измеряет и запоминает, остаётся на вашем телефоне.</p>
 <h2>Кто отвечает за приложение</h2>
 <p>Приложение «Интернет Доктор» разработано и распространяется частным разработчиком. По всем вопросам о конфиденциальности пишите на <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
@@ -39,18 +39,19 @@ ul { padding-left:1.2em; }
 </ul>
 <h2>Какие данные хранятся на телефоне</h2>
 <ul>
-<li>История проверок: время, тип подключения, скорость, задержка, потери, краткий итог.</li>
+<li>История проверок хранит время, тип подключения, результаты замеров, выводы, советы и подготовленный текст отчёта. Если Android сообщает имя Wi-Fi или код мобильного оператора, приложение сохраняет его, чтобы сопоставить проверки одной сети.</li>
+<li>Сеансы наблюдения содержат время начала и окончания, количество проб, задержку, потери, интервалы обрывов и отмеченные смены подключения.</li>
 <li>Карты сигнала: пройденный путь в относительных метрах (без адреса и координат) и уровень сигнала Wi-Fi и мобильной сети в точках пути.</li>
 <li>Места, сохранённые в Wi-Fi радаре, и подписи устройств домашней сети — только те названия, которые вы задали сами.</li>
 <li>Настройки приложения, в том числе выбранный язык.</li>
 </ul>
 <ul>
-<li>Цифры последней проверки (без имени сети) — чтобы результат открылся, если система выгрузит приложение из памяти.</li>
+<li>В последней полной проверке сохраняются измерения и доступные параметры подключения, включая имя Wi-Fi, код оператора и локальный адрес роутера.</li>
 <li>Объём трафика, израсходованного приложением за месяц, — чтобы показать его в «Приватности».</li>
 </ul>
 <p>Эти данные хранятся только в памяти приложения на вашем телефоне. Они исключены из облачных резервных копий и переноса на другое устройство. Удалить их можно в приложении («Приватность → Удалить все данные») или удалив приложение.</p>
 <h2>Копия данных, таблица и картинки</h2>
-<p>В разделе «Приватность → Ваши данные» можно сохранить копию истории, карт и подписей в файл, восстановить данные из такого файла и выгрузить историю в таблицу CSV. Файл сохраняется туда, куда вы сами укажете (на телефон или в облачное хранилище, которое вы выбрали в системном окне). Приложение не отправляет эти файлы разработчику.</p>
+<p>В разделе «Приватность → Ваши данные» можно сохранить копию истории, карт и подписей в файл, восстановить данные из такого файла и выгрузить историю в таблицу CSV. Файл сохраняется туда, куда вы сами укажете (на телефон или в облачное хранилище, которое вы выбрали в системном окне). В JSON-копии сохраняются записи истории с их отчётами и доступными именами сетей, в CSV могут быть имена Wi-Fi. Сохранёнными вами файлами вы управляете отдельно.</p>
 <p>Картинку с результатом и PDF-отчёт приложение делает на телефоне и передаёт только в то приложение, которое вы выберете, нажав «Поделиться» или «Отправить PDF».</p>
 <h2>Какие сетевые запросы выполняются</h2>
 <p>Чтобы измерить интернет, приложение обращается к общедоступным серверам:</p>
@@ -61,6 +62,16 @@ ul { padding-left:1.2em; }
 <li>проверяет, открываются ли google.com, cloudflare.com, wikipedia.org и apple.com, и отправляет DNS-запросы для этих адресов;</li>
 <li>на экране «Для специалистов», если вы нажмёте кнопку проверки, — отправляет системные ping-запросы к 1.1.1.1 и узлам по пути к нему (маршрут и MTU) и соединяется с 2606:4700:4700::1111 (проверка IPv6).</li>
 </ul>
+<p>Если вы запустите «Безопасность сети», приложение дополнительно:</p>
+<ul>
+<li>спрашивает DNS-сервер сети и публичный DNS об адресах популярных сайтов и о нескольких случайных несуществующих именах — чтобы понять, не подменяет ли сеть ответы;</li>
+<li>соединяется по HTTPS с несколькими сайтами (google.com, cloudflare.com, wikipedia.org, apple.com) и проверяет их сертификаты;</li>
+<li>делает два обычных (незашифрованных) запроса к connectivitycheck.gstatic.com и captive.apple.com и сравнивает ответ с ожидаемым — так видно, вмешивается ли сеть в страницы;</li>
+<li>при включённом VPN запрашивает у Cloudflare (1.1.1.1) свой внешний адрес двумя путями — через VPN и мимо него, — чтобы найти утечки;</li>
+<li>в режиме «В общественном месте» ищет другие устройства в той же сети (как «Устройства в сети»), только внутри неё;</li>
+<li>для определения защиты Wi‑Fi (WPA2, WPA3 и т. д.) читает список соседних точек доступа; Android для этого просит доступ к геолокации, местоположение приложение не определяет.</li>
+</ul>
+<p>Результат сохраняется в истории на телефоне. Вы можете скопировать его или поделиться им из приложения.</p>
 <p>Это обычные запросы, как у браузера: в них нет вашего имени, номера телефона или идентификаторов устройства. Как и любой сайт, эти серверы видят IP-адрес, с которого пришёл запрос, и обрабатывают его по своим правилам. Приложение не передаёт им никаких других сведений.</p>
 <p>Поиск устройств в сети и проверка роутера работают только внутри вашей домашней сети.</p>
 <h2>Автопроверка</h2>
@@ -68,17 +79,17 @@ ul { padding-left:1.2em; }
 <h2>Разрешения</h2>
 <ul>
 <li>Интернет и состояние сети — для замеров и определения типа подключения.</li>
-<li>Геолокация (или «Устройства Wi-Fi поблизости» на Android 13+) — только для проверки каналов Wi-Fi и названия вашей сети: Android выдаёт список соседних сетей лишь с этим разрешением. Приложение не определяет ваше местоположение. Без разрешения остальные функции работают.</li>
+<li>Геолокация и «Устройства Wi-Fi поблизости» на Android 13+ — для чтения имени сети и сведений о точках доступа. Имя нужно, чтобы сравнить замеры в одной сети после перезагрузки роутера. Приложение не определяет ваше местоположение.</li>
 <li>Датчики движения (без отдельного разрешения) — для карты сигнала: по шагам и повороту телефона приложение рисует путь по квартире. Данные датчиков не сохраняются и никуда не передаются.</li>
 <li>Вибрация — для отклика Wi-Fi радара.</li>
 <li>Запуск после перезагрузки — чтобы автопроверка продолжала работать, если вы её включили.</li>
-<li>Уведомления (Android 13+) — только для наблюдения за связью и дневной сводки, если вы их включили.</li>
+<li>Уведомления (Android 13+) — только для наблюдения за связью, дневной сводки и напоминания «проверить через 10 минут», если вы их включили или попросили.</li>
 <li>Фоновая служба и запрет сна — чтобы наблюдение за связью, которое вы запустили, не прерывалось при выключенном экране. Пока оно идёт, видно уведомление с кнопкой «Остановить».</li>
 </ul>
 <h2>Виджет и плитка</h2>
 <p>Виджет на рабочем столе и плитка в быстрых настройках показывают итог последней проверки из истории на телефоне и ничего не отправляют.</p>
 <h2>Отчёт для техподдержки</h2>
-<p>Отчёт (текст или PDF) формируется на телефоне и отправляется, только если вы сами нажмёте «Отправить» и выберете, куда. В отчёте есть только результаты проверки: время, скорость, задержка, потери, состояние DNS.</p>
+<p>Отчёт (текст или PDF) формируется на телефоне и отправляется, только если вы сами нажмёте «Отправить» и выберете, куда. В отчёте могут быть время, тип подключения, локальный адрес роутера, результаты измерений и диагностики. Отчёт наблюдения содержит время и длительность обрывов, типы подключения и статистику ответов. Перед отправкой текст можно посмотреть на экране.</p>
 <h2>Дети</h2>
 <p>Приложение не собирает персональные данные, в том числе данные детей.</p>
 <h2>Изменения политики</h2>
@@ -88,7 +99,7 @@ ul { padding-left:1.2em; }
 </section>
 <section id="en" lang="en">
 <h1>Privacy policy of the Internet Doctor app</h1>
-<p>Effective date: 28 September 2026 (app version 1.1.0).</p>
+<p>Effective date: 18 November 2026 (app version 1.5.0).</p>
 <p>In short: the app does not collect any data about you. Everything it measures and remembers stays on your phone.</p>
 <h2>Who is responsible for the app</h2>
 <p>The Internet Doctor app is developed and distributed by a private developer. For any privacy questions, write to <a href="mailto:strmax195@gmail.com">strmax195@gmail.com</a>.</p>
@@ -102,18 +113,19 @@ ul { padding-left:1.2em; }
 </ul>
 <h2>What data is stored on the phone</h2>
 <ul>
-<li>Check history: time, connection type, speed, latency, loss, short result.</li>
+<li>Check history includes the time, connection type, measurements, findings, advice and prepared report text. When Android provides a Wi-Fi name or mobile operator code, the app stores it to match checks on the same network.</li>
+<li>Connection watch sessions include start and end times, probe counts, latency, losses, outage intervals and observed connection changes.</li>
 <li>Signal maps: the walked path in relative metres (no address or coordinates) and the Wi-Fi and mobile signal levels along it.</li>
 <li>Places saved in the Wi-Fi radar and home network device labels: only the names you entered yourself.</li>
 <li>App settings, including the chosen language.</li>
 </ul>
 <ul>
-<li>The numbers of the latest check (without the network name), so the result opens again if the system unloads the app.</li>
+<li>The latest full check includes measurements and available connection details, including the Wi-Fi name, mobile operator code and local router address.</li>
 <li>The amount of data the app used this month, to show it under "Privacy".</li>
 </ul>
 <p>This data is stored only in the app's storage on your phone. It is excluded from cloud backups and device transfer. You can delete it in the app ("Privacy → Delete all data") or by uninstalling the app.</p>
 <h2>Backup, spreadsheet and images</h2>
-<p>Under "Privacy → Your data" you can save a backup of the history, maps and labels to a file, restore data from such a file and export the history to a CSV spreadsheet. The file is saved where you choose (on the phone or in the cloud storage you pick in the system dialog). The app does not send these files to the developer.</p>
+<p>Under "Privacy → Your data" you can save a backup of the history, maps and labels to a file, restore data from such a file and export the history to a CSV spreadsheet. The file is saved where you choose (on the phone or in the cloud storage you pick in the system dialog). JSON backups include history records with reports and available network names. CSV exports can include Wi-Fi names. You manage files you have saved separately.</p>
 <p>The result image and the PDF report are made on the phone and passed only to the app you choose after tapping "Share" or "Send PDF".</p>
 <h2>What network requests are made</h2>
 <p>To measure the internet, the app contacts public servers:</p>
@@ -124,6 +136,16 @@ ul { padding-left:1.2em; }
 <li>it checks whether google.com, cloudflare.com, wikipedia.org and apple.com open, and sends DNS queries for these addresses;</li>
 <li>on the "For experts" screen, if you tap the check button, it sends system ping requests to 1.1.1.1 and the hops on the way to it (route and MTU) and connects to 2606:4700:4700::1111 (IPv6 check).</li>
 </ul>
+<p>If you run “Network safety”, the app also:</p>
+<ul>
+<li>asks the network’s DNS server and a public DNS about the addresses of popular sites and a few random names that don’t exist, to see whether the network fakes answers;</li>
+<li>connects over HTTPS to a few sites (google.com, cloudflare.com, wikipedia.org, apple.com) and checks their certificates;</li>
+<li>makes two ordinary (unencrypted) requests to connectivitycheck.gstatic.com and captive.apple.com and compares the reply with the expected one, to see whether the network alters pages;</li>
+<li>when a VPN is on, asks Cloudflare (1.1.1.1) for its own external address by two routes, through the VPN and around it, to find leaks;</li>
+<li>in the “In a public place” mode, looks for other devices on the same network (like “Devices on the network”), inside that network only;</li>
+<li>to learn how the Wi‑Fi is protected (WPA2, WPA3, etc.), reads the list of nearby access points; Android asks for location access for this, and the app does not determine your location.</li>
+</ul>
+<p>The result is saved in the history on your phone. You can copy or share it from the app.</p>
 <p>These are ordinary requests, like a browser makes: they contain no name, phone number or device identifiers. Like any website, these servers see the IP address the request came from and process it under their own rules. The app sends them nothing else.</p>
 <p>Device search and the router check work only inside your home network.</p>
 <h2>Auto-check</h2>
@@ -131,17 +153,17 @@ ul { padding-left:1.2em; }
 <h2>Permissions</h2>
 <ul>
 <li>Internet and network state: for measurements and detecting the connection type.</li>
-<li>Location (or "Nearby Wi-Fi devices" on Android 13+): only for checking Wi-Fi channels and your network name, because Android provides the list of nearby networks only with this permission. The app does not determine your location. Everything else works without it.</li>
+<li>Location and "Nearby Wi-Fi devices" on Android 13+: used to read the Wi-Fi network name and information about access points. The network name lets the app compare measurements on the same Wi-Fi after a router restart. The app does not determine your location.</li>
 <li>Motion sensors (no separate permission): for the signal map, the app draws your path through the home from steps and phone orientation. Sensor data is not saved or sent anywhere.</li>
 <li>Vibration: for Wi-Fi radar feedback.</li>
 <li>Start after reboot: so that auto-check keeps working if you turned it on.</li>
-<li>Notifications (Android 13+): only for the connection watch and the daily summary, if you turned them on.</li>
+<li>Notifications (Android 13+): only for the connection watch, the daily summary and the "check again in 10 minutes" reminder, if you turned them on or asked for it.</li>
 <li>Foreground service and keeping the device awake: so that a connection watch you started is not interrupted while the screen is off. While it runs, a notification with a "Stop" button is shown.</li>
 </ul>
 <h2>Widget and tile</h2>
 <p>The home-screen widget and the quick-settings tile show the latest result from the history on the phone and send nothing.</p>
 <h2>Report for support</h2>
-<p>The report (text or PDF) is created on the phone and is sent only if you tap "Send" and choose where yourself. It contains only check results: time, speed, latency, loss and DNS status.</p>
+<p>The report (text or PDF) is created on the phone and is sent only if you tap "Send" and choose where yourself. It can include the time, connection type, local router address, measurements and findings. A connection watch report includes the times and durations of outages, connection types and probe statistics. You can review the text before sharing it.</p>
 <h2>Children</h2>
 <p>The app does not collect personal data, including children's data.</p>
 <h2>Changes to this policy</h2>
