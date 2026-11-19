@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="{{html_lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a1020" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{url}}">
+<link rel="alternate" hreflang="ru" href="{{site}}">
+<link rel="alternate" hreflang="en" href="{{site}}en/">
+<link rel="alternate" hreflang="x-default" href="{{site}}en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{og_locale}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{root}}assets/img/icon.svg" type="image/svg+xml">
+<link rel="icon" href="{{root}}assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="{{root}}assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="{{root}}assets/site.css?v={{version}}">
+<script type="application/ld+json">{{ld_json}}</script>
+</head>
+<body data-lang="{{html_lang}}" data-other="{{other_lang_href}}" data-suggest="{{lang_suggest}}" data-suggest-btn="{{lang_suggest_btn}}">
+<a class="skip" href="#main">{{skip}}</a>
+<svg width="0" height="0" class="sprite" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 15.9a5 5 0 0 1 6.6 0"/><circle cx="12" cy="19.3" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-router" viewBox="0 0 24 24"><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 16.5h.01M10.5 16.5h.01"/><path d="M8 9.5a5.5 5.5 0 0 1 8 0"/><path d="M5.5 7a9 9 0 0 1 13 0"/><path d="M12 13v-2"/></symbol>
+  <symbol id="i-dns" viewBox="0 0 24 24"><path d="M5 4.5h11a3 3 0 0 1 3 3v12H8a3 3 0 0 1-3-3z"/><path d="M5 16.5a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></symbol>
+  <symbol id="i-isp" viewBox="0 0 24 24"><path d="M12 10v11"/><path d="M8.5 21h7"/><path d="M12 10l-3.5 11M12 10l3.5 11"/><path d="M8.2 6.2a5.3 5.3 0 0 0 0 7.6M15.8 6.2a5.3 5.3 0 0 1 0 7.6"/><path d="M5.3 3.4a9.4 9.4 0 0 0 0 13.2M18.7 3.4a9.4 9.4 0 0 1 0 13.2"/><circle cx="12" cy="10" r="1.3" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 6v7.5"/><circle cx="12" cy="17.8" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+  <symbol id="i-dash" viewBox="0 0 24 24"><path d="M7.5 12h9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/></symbol>
+  <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5c-4.4-1.2-7.5-4.9-7.5-9.5V6z"/><path d="M8.6 12.2l2.4 2.4l4.4-4.6"/></symbol>
+  <symbol id="i-proof" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/><path d="M8 10.6l1.8 1.8l3.2-3.4"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.1-2.4 3.7"/><circle cx="12" cy="17.2" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6.4-6.4"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-channels" viewBox="0 0 24 24"><path d="M3 19c2-9 4-9 6 0"/><path d="M8 19c2.5-12 5.5-12 8 0"/><path d="M15 19c2-8 4-8 6 0"/><path d="M2.5 19.5h19"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6l5 12l2.5-6h4"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="5" width="13" height="9.5" rx="1.5"/><path d="M6 18h6"/><rect x="17" y="8" width="4.5" height="10" rx="1.2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 0 5.6 7.2"/><path d="M5 3.5v4h4"/><path d="M4 12.5a8 8 0 0 0 14.4 4.3"/><path d="M19 20.5v-4h-4"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-3.5-3.5"/><path d="M20 16H6l3.5 3.5"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+  <symbol id="i-widget" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/></symbol>
+  <symbol id="i-terminal" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M6.5 9.5l3 2.5l-3 2.5M12 15h5"/></symbol>
+  <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5.5h9M8.5 3.5v2M6 5.5c.7 3.4 3 6 6 7.5M11 5.5c-.8 4-3.3 7-7 8.5"/><path d="M12.5 20.5l4-10l4 10M14 17h5"/></symbol>
+  <symbol id="i-user-off" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.8"/><path d="M4.5 20.5a7.5 7.5 0 0 1 11.6-6.3"/><path d="M17 16l4 4M21 16l-4 4"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M10.6 5.6A9.7 9.7 0 0 1 12 5.5c5.5 0 9 6.5 9 6.5a17 17 0 0 1-2.6 3.4M6.3 7.3C4.2 8.8 3 12 3 12s3.5 6.5 9 6.5a8.6 8.6 0 0 0 4.2-1.1"/><path d="M9.9 10a3 3 0 0 0 4.1 4.1"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M9.5 12l1.8 1.8L14.7 10"/></symbol>
+  <symbol id="i-cloud-off" viewBox="0 0 24 24"><path d="M3 3l18 18"/><path d="M8.5 6.6A6 6 0 0 1 17.6 10a4 4 0 0 1 3 5.6M17 18.5H7a4.5 4.5 0 0 1-1.4-8.8"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6.5 6.5l.9 13.5h9.2l.9-13.5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v12M7 11l5 5l5-5"/><path d="M4.5 20.5h15"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6l-6 6"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4.5v4h-4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="brand" href="{{home}}" aria-label="{{app_name}}">
+      <img src="{{root}}assets/img/icon.svg" width="34" height="34" alt="">
+      <span>{{app_name}}</span>
+    </a>
+    <nav class="nav" aria-label="{{menu}}">
+      <a href="#how">{{nav_how}}</a>
+      <a href="#features">{{nav_features}}</a>
+      <a href="#safety">{{nav_safety}}</a>
+      <a href="#privacy">{{nav_privacy}}</a>
+      <a href="#faq">{{nav_faq}}</a>
+    </nav>
+    <div class="top-act">
+      <a class="lang" href="{{other_lang_href}}" hreflang="{{other_lang_code_lc}}" lang="{{other_lang_code_lc}}" title="{{other_lang_name}}" data-lang="{{other_lang_code_lc}}"><svg><use href="#i-globe"/></svg>{{other_lang_code}}</a>
+      <a class="btn btn-sm" href="#get">{{nav_get}}</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <a class="pill pill-new reveal" href="#safety"><svg><use href="#i-spark"/></svg>{{hero_badge}}<svg class="chev"><use href="#i-chevron"/></svg></a>
+      <h1 class="reveal">{{hero_title}}</h1>
+      <p class="lead reveal">{{hero_lead}}</p>
+      <div class="stores reveal" id="get">
+        {{store_buttons}}
+      </div>
+      <p class="note reveal">{{hero_note}}</p>
+      <ul class="chips reveal">
+        <li><svg><use href="#i-user-off"/></svg>{{chip_signup}}</li>
+        <li><svg><use href="#i-eye-off"/></svg>{{chip_ads}}</li>
+        <li><svg><use href="#i-device"/></svg>{{chip_phone}}</li>
+      </ul>
+    </div>
+    <div class="hero-art reveal">
+      <div class="phone phone-hero">
+        <img src="{{root}}assets/img/result-{{html_lang}}.webp" width="760" height="1340" alt="{{alt_result}}" fetchpriority="high">
+      </div>
+      <div class="float float-1"><span class="dot ok"></span><div><b>{{float_1_t}}</b><small>{{float_1_s}}</small></div></div>
+      <div class="float float-2"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><b>{{float_2_t}}</b><small>{{float_2_s}}</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head center">
+      <p class="kicker">{{how_kicker}}</p>
+      <h2>{{how_title}}</h2>
+      <p class="lead">{{how_lead}}</p>
+    </div>
+    <div class="demo" id="demo" data-todo="{{demo_todo}}" data-enough="{{demo_enough}}" data-demo="{{demo_json}}">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-sc="wifi">{{sc_wifi}}</button>
+        <button role="tab" aria-selected="false" data-sc="isp">{{sc_isp}}</button>
+        <button role="tab" aria-selected="false" data-sc="dns">{{sc_dns}}</button>
+        <button role="tab" aria-selected="false" data-sc="ok">{{sc_ok}}</button>
+      </div>
+      <div class="demo-card">
+        <ol class="chain" aria-hidden="true">
+          <li data-n="0"><span class="node"><svg><use href="#i-phone"/></svg><em class="badge"></em></span><span class="lbl">{{node_phone}}</span></li>
+          <li data-n="1"><span class="node"><svg><use href="#i-wifi"/></svg><em class="badge"></em></span><span class="lbl">{{node_wifi}}</span></li>
+          <li data-n="2"><span class="node"><svg><use href="#i-router"/></svg><em class="badge"></em></span><span class="lbl">{{node_router}}</span></li>
+          <li data-n="3"><span class="node"><svg><use href="#i-dns"/></svg><em class="badge"></em></span><span class="lbl">{{node_dns}}</span></li>
+          <li data-n="4"><span class="node"><svg><use href="#i-isp"/></svg><em class="badge"></em></span><span class="lbl">{{node_isp}}</span></li>
+          <li data-n="5"><span class="node"><svg><use href="#i-globe"/></svg><em class="badge"></em></span><span class="lbl">{{node_net}}</span></li>
+        </ol>
+        <div class="verdict" aria-live="polite">
+          <div class="v-wait"><span class="spin"></span>{{demo_checking}}</div>
+          <div class="v-body" hidden>
+            <div class="v-main">
+              <div class="v-top"><span class="v-ico"></span><span class="v-eyebrow"></span></div>
+              <h3 class="v-title"></h3>
+              <p class="v-text"></p>
+              <p class="v-where"><svg><use href="#i-pin"/></svg><span></span></p>
+            </div>
+            <div class="v-side">
+              <p class="v-side-h"></p>
+              <ol class="v-steps"></ol>
+              <button class="replay" type="button"><svg><use href="#i-play"/></svg>{{demo_replay}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="fine center">{{how_honest}}</p>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <article class="feat reveal">
+      <div class="feat-copy">
+        <p class="kicker">{{f1_kicker}}</p>
+        <h2>{{f1_title}}</h2>
+        <p class="lead">{{f1_lead}}</p>
+        <ul class="ticks">
+          <li>{{f1_li1}}</li><li>{{f1_li2}}</li><li>{{f1_li3}}</li><li>{{f1_li4}}</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="{{root}}assets/img/enough-{{html_lang}}.webp" width="760" height="1340" alt="{{alt_enough}}" loading="lazy"></div></div>
+    </article>
+
+    <article class="feat feat-rev reveal">
+      <div class="feat-copy">
+        <p class="kicker">{{f2_kicker}}</p>
+        <h2>{{f2_title}}</h2>
+        <p class="lead">{{f2_lead}}</p>
+        <ul class="ticks">
+          <li>{{f2_li1}}</li><li>{{f2_li2}}</li><li>{{f2_li3}}</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="{{root}}assets/img/map-{{html_lang}}.webp" width="760" height="1340" alt="{{alt_map}}" loading="lazy"></div></div>
+    </article>
+
+    <article class="feat reveal">
+      <div class="feat-copy">
+        <p class="kicker">{{f3_kicker}}</p>
+        <h2>{{f3_title}}</h2>
+        <p class="lead">{{f3_lead}}</p>
+        <ul class="ticks">
+          <li>{{f3_li1}}</li><li>{{f3_li2}}</li><li>{{f3_li3}}</li>
+        </ul>
+      </div>
+      <div class="feat-art"><div class="phone"><img src="{{root}}assets/img/history-{{html_lang}}.webp" width="760" height="1340" alt="{{alt_history}}" loading="lazy"></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="safety" id="safety">
+  <div class="wrap safety-in">
+    <div class="safety-copy reveal">
+      <p class="kicker kicker-new"><svg><use href="#i-spark"/></svg>{{safe_kicker}}</p>
+      <h2>{{safe_title}}</h2>
+      <p class="lead">{{safe_lead}}</p>
+      <div class="principles">
+        <div><span class="p-ico"><svg><use href="#i-proof"/></svg></span><b>{{safe_p1_t}}</b><p>{{safe_p1_s}}</p></div>
+        <div><span class="p-ico"><svg><use href="#i-help"/></svg></span><b>{{safe_p2_t}}</b><p>{{safe_p2_s}}</p></div>
+        <div><span class="p-ico"><svg><use href="#i-shield"/></svg></span><b>{{safe_p3_t}}</b><p>{{safe_p3_s}}</p></div>
+      </div>
+    </div>
+    <div class="safety-art reveal" aria-hidden="true">
+      <div class="phone phone-ui">
+        <div class="ui">
+          <div class="ui-status"><span>12:30</span><i></i><span class="ui-sig"><svg><use href="#i-wifi"/></svg></span></div>
+          <div class="ui-bar"><span class="ui-back"><svg><use href="#i-chevron"/></svg></span>{{m_safe_title}}</div>
+          <div class="ui-hero">
+            <div class="ui-row"><span class="ui-circ warn"><svg><use href="#i-alert"/></svg></span><span class="ui-pill">{{m_safe_eyebrow}}</span></div>
+            <b>{{m_safe_head}}</b>
+            <span>{{m_safe_sub}}</span>
+          </div>
+          <p class="ui-h">{{m_safe_checked}}</p>
+          <ul class="ui-list">
+            <li><span class="ui-dot warn"><svg><use href="#i-alert"/></svg></span><div><small>{{m_safe_1t}}</small>{{m_safe_1v}}</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>{{m_safe_2t}}</small>{{m_safe_2v}}</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>{{m_safe_3t}}</small>{{m_safe_3v}}</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>{{m_safe_4t}}</small>{{m_safe_4v}}</div></li>
+            <li><span class="ui-dot ok"><svg><use href="#i-check"/></svg></span><div><small>{{m_safe_5t}}</small>{{m_safe_5v}}</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="more">
+  <div class="wrap">
+    <div class="head center reveal">
+      <p class="kicker">{{more_kicker}}</p>
+      <h2>{{more_title}}</h2>
+    </div>
+    <div class="bento">
+      <div class="tile reveal t-wide"><span class="t-ico"><svg><use href="#i-radar"/></svg></span><h3>{{b1_t}}</h3><p>{{b1_s}}</p><div class="radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-channels"/></svg></span><h3>{{b2_t}}</h3><p>{{b2_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-pulse"/></svg></span><h3>{{b3_t}}</h3><p>{{b3_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-devices"/></svg></span><h3>{{b4_t}}</h3><p>{{b4_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-refresh"/></svg></span><h3>{{b5_t}}</h3><p>{{b5_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-swap"/></svg></span><h3>{{b6_t}}</h3><p>{{b6_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-bell"/></svg></span><h3>{{b7_t}}</h3><p>{{b7_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-widget"/></svg></span><h3>{{b8_t}}</h3><p>{{b8_s}}</p></div>
+      <div class="tile reveal"><span class="t-ico"><svg><use href="#i-terminal"/></svg></span><h3>{{b9_t}}</h3><p>{{b9_s}}</p></div>
+      <div class="tile reveal t-wide t-lang"><span class="t-ico"><svg><use href="#i-lang"/></svg></span><h3>{{b10_t}}</h3><p>{{b10_s}}</p><div class="langs" aria-hidden="true">{{lang_cloud}}</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="privacy" id="privacy">
+  <div class="wrap">
+    <div class="priv reveal">
+      <div class="priv-copy">
+        <span class="priv-shield"><svg><use href="#i-shield-check"/></svg></span>
+        <p class="kicker">{{priv_kicker}}</p>
+        <h2>{{priv_title}}</h2>
+        <p class="lead">{{priv_lead}}</p>
+        <a class="link" href="{{root}}{{privacy_hash}}">{{priv_link}}<svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="priv-list">
+        <li><svg><use href="#i-user-off"/></svg>{{priv_1}}</li>
+        <li><svg><use href="#i-eye-off"/></svg>{{priv_2}}</li>
+        <li><svg><use href="#i-device"/></svg>{{priv_3}}</li>
+        <li><svg><use href="#i-cloud-off"/></svg>{{priv_4}}</li>
+        <li><svg><use href="#i-trash"/></svg>{{priv_5}}</li>
+        <li class="priv-site">{{priv_site}}</li>
+      </ul>
+    </div>
+    <dl class="stats reveal">
+      <div><dt data-count="20">20</dt><dd>{{stat_1}}</dd></div>
+      <div><dt data-count="37">37</dt><dd>{{stat_2}}</dd></div>
+      <div><dt>0</dt><dd>{{stat_3}}</dd></div>
+      <div><dt>{{stat_4_num}}</dt><dd>{{stat_4}}</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <h2 class="reveal">{{faq_title}}</h2>
+    <div class="qa reveal">
+      <details><summary>{{q1}}</summary><p>{{a1}}</p></details>
+      <details><summary>{{q2}}</summary><p>{{a2}}</p></details>
+      <details><summary>{{q3}}</summary><p>{{a3}}</p></details>
+      <details><summary>{{q4}}</summary><p>{{a4}}</p></details>
+      <details><summary>{{q5}}</summary><p>{{a5}}</p></details>
+      <details><summary>{{q6}}</summary><p>{{a6}}</p></details>
+      <details><summary>{{q7}}</summary><p>{{a7}}</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-box reveal">
+      <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <img src="{{root}}assets/img/icon.svg" width="76" height="76" alt="" class="cta-icon">
+      <h2>{{cta_title}}</h2>
+      <p class="lead">{{cta_lead}}</p>
+      <div class="stores stores-inv">
+        {{store_buttons}}
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <img src="{{root}}assets/img/icon.svg" width="28" height="28" alt="">
+      <div><b>{{app_name}}</b><small>{{foot_made}}</small></div>
+    </div>
+    <nav class="foot-nav">
+      <a href="{{root}}{{privacy_hash}}">{{foot_privacy}}</a>
+      <a href="mailto:strmax195@gmail.com">{{foot_contact}}</a>
+      <a href="{{other_lang_href}}" lang="{{other_lang_code_lc}}" data-lang="{{other_lang_code_lc}}">{{other_lang_name}}</a>
+    </nav>
+    <small class="copy">© 2026 {{app_name}}</small>
+  </div>
+</footer>
+
+<script src="{{root}}assets/site.js?v={{version}}" defer></script>
+</body>
+</html>
